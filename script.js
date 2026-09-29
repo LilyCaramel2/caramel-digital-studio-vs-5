@@ -20,14 +20,36 @@ const initializeSite = () => {
   document.querySelectorAll('form[data-enquiry-form]').forEach((form) => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
-      const fields = new FormData(form);
-      const name = String(fields.get('name') || '').trim();
-      const email = String(fields.get('email') || '').trim();
-      const business = String(fields.get('business') || '').trim();
-      const message = String(fields.get('message') || '').trim();
-      const subject = business ? `Project enquiry: ${business}` : 'Caramel Digital Studio project enquiry';
-      const body = [`Name: ${name}`, `Email: ${email}`, `Business or project: ${business || 'Not provided'}`, '', message].join('\n');
-      window.location.href = `mailto:lily@carameldigitalstudio.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const accessKey = form.elements.access_key.value.trim();
+      const status = form.querySelector('[data-form-status]');
+      const submitButton = form.querySelector('button[type="submit"]');
+
+      if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+        status.textContent = 'The enquiry form is not connected yet. Please email lily@carameldigitalstudio.com directly.';
+        return;
+      }
+
+      status.textContent = 'Sending your enquiry…';
+      submitButton.disabled = true;
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(async (response) => {
+          const result = await response.json();
+          if (!response.ok || !result.success) {
+            throw new Error(result.message || 'The enquiry could not be sent. Please email directly instead.');
+          }
+          form.reset();
+          status.textContent = 'Thank you. Your enquiry has been sent.';
+        })
+        .catch((error) => {
+          status.textContent = error.message || 'The enquiry could not be sent. Please email directly instead.';
+        })
+        .finally(() => {
+          submitButton.disabled = false;
+        });
     });
   });
 };
