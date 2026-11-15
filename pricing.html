@@ -1,45 +1,228 @@
 <!doctype html>
 <html lang="en-ZA">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0B1424">
-  <meta name="description" content="Transparent pricing for Caramel Digital Studio website packages, maintenance, content and add-ons.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1424">
+  <meta name="description" content="Caramel Digital Studio website builds, hosting, maintenance, SEO, content, branding and digital growth services.">
   <title>Caramel Digital Studio — Pricing</title>
-  <script src="https://cdn.tailwindcss.com"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=2"><script src="script.js" defer></script>
-  <script>tailwind.config={theme:{extend:{colors:{navy:'#0B1424',pink:'#F3B6C7',green:'#A9E59A',yellow:'#FCE78B',slate:'#040811'},fontFamily:{sans:['Outfit','sans-serif'],mono:['JetBrains Mono','monospace']},animation:{'fade-in':'fadeIn 0.8s ease-out forwards'},keyframes:{fadeIn:{'0%':{opacity:'0',transform:'translateY(10px)'},'100%':{opacity:'1',transform:'translateY(0)'}}}}}};</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0B1424',
+            pink: '#F3B6C7',
+            green: '#A9E59A',
+            yellow: '#FCE78B',
+            slate: '#040811'
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.8s ease-out forwards'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .pricing-card { transition: transform .25s ease, border-color .25s ease, background-color .25s ease; }
+    .pricing-card:hover { transform: translateY(-4px); }
+    @media (prefers-reduced-motion: reduce) { .pricing-card { transition: none; } .pricing-card:hover { transform: none; } }
+  </style>
 </head>
-<body class="min-h-screen antialiased selection:bg-pink/30 selection:text-white">
-<header class="fixed top-0 left-0 right-0 z-50 glass border-b border-pink/10"><div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-5"><a href="index.html" class="flex items-center gap-3"><img src="assets/caramel-logo.png" alt="" class="w-12 h-12 object-cover"><span class="text-pink font-semibold text-xl">Caramel</span><span class="text-white/60 text-sm">Digital Studio</span></a><nav class="hidden lg:flex items-center gap-7 text-sm text-white/75"><a href="index.html" class="hover:text-pink">Home</a><a href="capabilities.html" class="hover:text-pink">Capabilities</a><a href="index.html#intelligence" class="hover:text-pink">Intelligence</a><a href="work.html" class="hover:text-pink">Selected Work</a><a href="pricing.html" class="text-pink">Pricing</a><a href="start.html" class="hover:text-pink">Start a Project</a></nav><a href="start.html" class="hidden sm:inline-block px-5 py-2.5 rounded-lg bg-pink/10 border border-pink/30 text-pink text-sm font-medium">Start a project</a></div></header>
-<main class="pt-20">
-  <section class="relative pt-32 pb-20 px-6 glow-hero"><div class="max-w-5xl mx-auto animate-fade-in"><div class="eyebrow mb-7 text-green">Founding Client Launch Pricing</div><h1 class="text-6xl md:text-8xl font-thin leading-[0.98] text-white mb-8">Clear investment, <span class="text-pink font-extralight">scalable value</span></h1><p class="text-xl md:text-2xl font-light text-white/80 leading-relaxed max-w-3xl">Every Caramel Digital Studio site is engineered to bring inbound leads. Advanced AI capabilities and intelligent automation are integrated according to the level of your chosen package.</p></div></section>
+<body class="min-h-screen bg-navy text-white antialiased selection:bg-pink/30 selection:text-white">
+  <header class="fixed left-0 right-0 top-0 z-50 border-b border-pink/10 bg-navy/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-6 py-4">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Caramel Digital Studio home">
+        <img src="assets/caramel-logo.png" alt="" class="h-12 w-12 object-cover">
+        <span class="text-xl font-semibold text-pink">Caramel</span>
+        <span class="text-sm text-white/60">Digital Studio</span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm text-white/75 lg:flex" aria-label="Primary navigation">
+        <a href="index.html" class="hover:text-pink">Home</a>
+        <a href="capabilities.html" class="hover:text-pink">Capabilities</a>
+        <a href="work.html" class="hover:text-pink">Selected Work</a>
+        <a href="pricing.html" class="text-pink">Pricing</a>
+        <a href="start.html" class="hover:text-pink">Start a Project</a>
+      </nav>
+      <a href="start.html" class="hidden rounded-lg border border-pink/30 bg-pink/10 px-5 py-2.5 text-sm font-medium text-pink hover:bg-pink hover:text-navy sm:inline-block">Start a project</a>
+    </div>
+  </header>
 
-  <section class="py-24 px-6 border-t border-pink/10"><div class="max-w-6xl mx-auto"><div class="eyebrow text-yellow mb-6">01 · Website Packages</div><h2 class="text-4xl md:text-6xl font-thin text-white mb-12">Choose your <span class="text-pink">build level</span></h2><div class="grid lg:grid-cols-3 gap-5">
-    <article class="glass rounded-xl p-7 border-b-2 border-b-yellow/50"><div class="eyebrow text-yellow mb-3">FOUNDATION BUILD</div><h3 class="text-2xl font-medium text-pink mb-1">Starter Presence</h3><div class="text-4xl font-thin text-white mb-5">R3,700</div><p class="text-sm text-white/70 leading-relaxed mb-5">For new businesses, solo founders, freelancers, local services, and small brands that need a credible online presence ready to launch.</p><ul class="space-y-3 text-sm text-white/80"><li>5-page site: Home, About, Services, Blog, Contact</li><li>FAQs written around real customer questions</li><li>4 launch-ready blog posts</li><li>Domain registration (1 yr) + 1 email + 3 aliases</li><li>SSL, hosting, social integration, WhatsApp</li><li>Full SEO foundation and analytics</li><li>Contextual WhatsApp integration</li><li>Starter client dashboard</li></ul><p class="eyebrow text-green mt-6">AI TIER 1 · INTELLIGENT LEAD CAPTURE</p></article>
-    <article class="glass-elevated rounded-xl p-7 border-t-2 border-t-yellow"><div class="eyebrow text-yellow mb-3">NEXT.JS INTELLIGENT BUILD</div><h3 class="text-2xl font-medium text-pink mb-1">Growth Brand Site</h3><div class="text-4xl font-thin text-white mb-5">R6,100</div><p class="text-sm text-white/70 leading-relaxed mb-5">For service businesses ready to scale, requiring dynamic features, deeper search visibility, and intelligent automation.</p><div class="text-sm font-medium text-white mb-3">Everything in Starter, plus:</div><ul class="space-y-3 text-sm text-white/80"><li>Next.js architecture: faster, scalable, advanced features</li><li>Expanded pages: service pages, FAQs, Testimonials, Gallery</li><li>Deeper on-page SEO with keyword research</li><li>Conversion-ready sections and trust blocks</li><li>Social profile audit and rebrand (up to 3 platforms)</li><li>Light/dark mode toggle</li><li>Embedded AI Assistant: conversational bot trained on your brand</li><li>AI-generated podcast from blog posts</li><li>Advanced client workspace</li></ul><p class="eyebrow text-green mt-6">AI TIER 2 · CONVERSATIONAL BRAND ASSISTANT</p></article>
-    <article class="glass rounded-xl p-7 border-b-2 border-b-yellow/50"><div class="eyebrow text-yellow mb-3">FULL ECOSYSTEM BUILD</div><h3 class="text-2xl font-medium text-pink mb-1">Authority Site</h3><div class="text-4xl font-thin text-white mb-5">R12,700</div><p class="text-sm text-white/70 leading-relaxed mb-5">For established businesses ready to use their website as a 24/7 lead and revenue system.</p><div class="text-sm font-medium text-white mb-3">Everything in Growth, plus:</div><ul class="space-y-3 text-sm text-white/80"><li>Complex architecture: service clusters, resources, case studies</li><li>Strategy session and UX mapping</li><li>Premium visual system and advanced trust architecture</li><li>Admin dashboard and branded client dashboards</li><li>Booking, calendar, courses, and e-commerce</li><li>Fully embedded AI Agent: quoting, invoicing, correspondence</li><li>AI video generation via Google Veo</li><li>Full client workspace and analytics</li></ul><p class="eyebrow text-green mt-6">AI TIER 3 · AUTONOMOUS BUSINESS AGENT</p></article>
-  </div><div class="grid md:grid-cols-2 gap-5 mt-5"><article class="glass rounded-xl p-7"><div class="eyebrow text-yellow mb-2">ENTRY</div><h3 class="text-xl font-medium text-pink">Landing Page</h3><div class="text-3xl font-thin text-white mb-3">R1,270</div><p class="text-sm text-white/70">For local businesses needing a focused enquiry page, as well as models, artists, and professionals requiring a high-impact portfolio or CV site. Includes one high-impact scrolling page, focused offer structure or portfolio gallery, contact form or WhatsApp call to action, basic branding alignment and mobile-friendly layout, SEO foundations and analytics, and structured lead capture forms.</p></article><article class="glass rounded-xl p-7"><div class="eyebrow text-yellow mb-2">ENTRY</div><h3 class="text-xl font-medium text-pink">Compact Site</h3><div class="text-3xl font-thin text-white mb-3">R2,470</div><p class="text-sm text-white/70">For a streamlined 3-page portfolio, profile, or service site. Includes Home, About/Services, and Contact pages; contact form wired to email and WhatsApp button; basic branding, SEO foundations, analytics and structured lead capture forms; and domain connection support.</p></article></div><p class="text-xs text-white/55 mt-5">All prices shown in South African rand. Domain, hosting, third-party tools and services are subject to the inclusions confirmed for the selected package.</p></div></section>
+  <main class="pt-20">
+    <section class="relative overflow-hidden px-6 pb-24 pt-32">
+      <div class="pointer-events-none absolute -left-24 top-20 h-80 w-80 rounded-full bg-pink/10 blur-3xl"></div>
+      <div class="pointer-events-none absolute right-0 top-40 h-96 w-96 rounded-full bg-yellow/10 blur-3xl"></div>
+      <div class="relative mx-auto max-w-5xl animate-fade-in">
+        <p class="mb-7 font-mono text-xs uppercase tracking-[0.28em] text-green">Launch pricing · effective date to be confirmed</p>
+        <h1 class="mb-8 max-w-5xl text-6xl font-thin leading-[0.98] tracking-[-0.04em] text-white md:text-8xl">Clear investment, <span class="text-pink">scalable value</span></h1>
+        <p class="max-w-3xl text-xl font-light leading-relaxed text-white/80 md:text-2xl">Choose the level of digital foundation you need now. Add care, visibility, content, branding, or intelligent systems when the business is ready.</p>
+        <p class="mt-7 max-w-2xl text-sm leading-7 text-white/55">A proper HTML demo is shown before a project commitment. Production work begins after the agreed deposit. A website does not go live and final files are not released until the remaining balance is paid.</p>
+      </div>
+    </section>
 
-  <section class="py-24 px-6 border-t border-pink/10"><div class="max-w-6xl mx-auto"><div class="eyebrow text-yellow mb-6">02 · Maintenance</div><h2 class="text-4xl md:text-6xl font-thin text-white mb-12">Keep your site <span class="text-pink">running</span></h2><div class="grid md:grid-cols-3 gap-5">
-    <article class="glass rounded-xl p-7 border-t-2 border-t-yellow"><h3 class="text-xl font-medium text-pink">Essential Care</h3><div class="text-3xl font-thin text-white my-4">R190<small class="text-sm text-white/60">/month</small></div><ul class="space-y-3 text-sm text-white/80"><li>High-speed hosting</li><li>SSL management &amp; security monitoring</li><li>Software updates &amp; weekly backups</li><li>Uptime monitoring</li></ul><p class="text-xs text-white/55 mt-5">First month included. Begins day 31.</p></article>
-    <article class="glass rounded-xl p-7 border-t-2 border-t-yellow"><h3 class="text-xl font-medium text-pink">Managed Care</h3><div class="text-3xl font-thin text-white my-4">R370<small class="text-sm text-white/60">/month</small></div><ul class="space-y-3 text-sm text-white/80"><li>Everything in Essential Care</li><li>1 hour per week of content updates</li><li>Monthly performance check</li><li>Priority response &amp; proactive SEO</li></ul></article>
-    <article class="glass rounded-xl p-7 border-t-2 border-t-yellow"><h3 class="text-xl font-medium text-pink">Managed Care Plus</h3><div class="text-3xl font-thin text-white my-4">R610<small class="text-sm text-white/60">/month</small></div><ul class="space-y-3 text-sm text-white/80"><li>Everything in Managed Care</li><li>Hands-on monthly support layer</li><li>Designed for higher-change websites</li></ul></article>
-  </div></div></section>
+    <section class="border-t border-pink/10 px-6 py-24" aria-labelledby="website-packages">
+      <div class="mx-auto max-w-7xl">
+        <p class="mb-6 font-mono text-xs uppercase tracking-[0.28em] text-yellow">01 · website builds</p>
+        <h2 id="website-packages" class="mb-5 text-4xl font-thin tracking-[-0.03em] md:text-6xl">Start with the right <span class="text-pink">build level</span></h2>
+        <p class="mb-12 max-w-3xl text-base leading-7 text-white/65">Launch prices apply to the stated scope. Additional pages, complex content, integrations, ecommerce, booking, dashboards, and custom systems are quoted separately.</p>
 
-  <section class="py-24 px-6 border-t border-pink/10"><div class="max-w-6xl mx-auto"><div class="eyebrow text-yellow mb-6">03 · SEO &amp; Content</div><h2 class="text-4xl md:text-6xl font-thin text-white mb-12">Grow your <span class="text-pink">audience</span></h2><div class="grid md:grid-cols-2 gap-5">
-    <article class="glass-elevated rounded-xl p-8 border-l-4 border-l-yellow"><h3 class="text-2xl font-medium text-pink mb-1">SEO / Content Seed</h3><div class="text-3xl font-thin text-white mb-6">R610<small class="text-sm text-white/60">/month</small></div><ul class="space-y-4 text-sm text-white/80"><li>2 SEO blog posts per month, perfectly repurposed.</li><li>Keyword research and basic branded image support.</li><li>Flexible distribution: published to a total of <strong class="text-white">2 platforms of your choice</strong> (e.g., Google Business + 1 social platform, OR 2 social platforms).</li><li>Community management: responding to reviews and comments on connected platforms.</li></ul></article>
-    <article class="glass-elevated rounded-xl p-8 border-l-4 border-l-yellow"><h3 class="text-2xl font-medium text-pink mb-1">SEO / Content Grow</h3><div class="text-3xl font-thin text-white mb-6">R1,270<small class="text-sm text-white/60">/month</small></div><ul class="space-y-4 text-sm text-white/80"><li>4 SEO blog posts per month, perfectly repurposed.</li><li>Deeper keyword research and premium branded image support.</li><li>Flexible distribution: published to a total of <strong class="text-white">up to 4 platforms of your choice</strong>.</li><li>Community management: responding to reviews and comments across all connected channels.</li></ul></article>
-  </div></div></section>
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+          <article class="pricing-card rounded-2xl border border-yellow/35 bg-white/[0.045] p-6 shadow-2xl shadow-black/20 backdrop-blur-xl">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-yellow">01 / focused</p>
+            <h3 class="mt-5 text-2xl font-medium text-pink">Landing Page</h3>
+            <p class="mt-3 min-h-20 text-sm leading-6 text-white/65">One focused responsive page for a service, offer, campaign, professional, or small business.</p>
+            <p class="mt-7 text-4xl font-thin text-yellow">R1,750</p><p class="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-white/45">once-off · launch price</p>
+            <ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Custom responsive layout</li><li>CTA and basic SEO metadata</li><li>Supplied logo and agreed images</li><li>One consolidated revision round</li></ul>
+          </article>
+          <article class="pricing-card rounded-2xl border border-pink/30 bg-white/[0.045] p-6 shadow-2xl shadow-black/20 backdrop-blur-xl">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-pink">02 / compact</p>
+            <h3 class="mt-5 text-2xl font-medium text-pink">Compact Site</h3>
+            <p class="mt-3 min-h-20 text-sm leading-6 text-white/65">A small multi-page site for a business that needs more than one clear entry point.</p>
+            <p class="mt-7 text-4xl font-thin text-pink">R3,500</p><p class="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-white/45">once-off · launch price</p>
+            <ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Up to three core pages</li><li>Shared navigation and footer</li><li>Contact route and SEO foundations</li><li>One consolidated revision round</li></ul>
+          </article>
+          <article class="pricing-card rounded-2xl border border-green/40 bg-white/[0.065] p-6 shadow-2xl shadow-black/20 backdrop-blur-xl">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-green">03 / presence</p>
+            <h3 class="mt-5 text-2xl font-medium text-pink">Starter Presence</h3>
+            <p class="mt-3 min-h-20 text-sm leading-6 text-white/65">A credible small-business site with space for services, trust, and enquiry.</p>
+            <p class="mt-7 text-4xl font-thin text-green">R5,200</p><p class="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-white/45">once-off · launch price</p>
+            <ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Up to five pages</li><li>Content and local-search structure</li><li>Enquiry path and social links</li><li>Two consolidated revision rounds</li></ul>
+          </article>
+          <article class="pricing-card rounded-2xl border border-pink/30 bg-white/[0.045] p-6 shadow-2xl shadow-black/20 backdrop-blur-xl">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-pink">04 / growth</p>
+            <h3 class="mt-5 text-2xl font-medium text-pink">Growth Brand Site</h3>
+            <p class="mt-3 min-h-20 text-sm leading-6 text-white/65">A strategic site with stronger content architecture, conversion flow, and visual direction.</p>
+            <p class="mt-7 text-4xl font-thin text-pink">R8,500</p><p class="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-white/45">once-off · launch price</p>
+            <ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Custom visual system</li><li>Service, portfolio, or product structure</li><li>Technical SEO foundations</li><li>Two consolidated revision rounds</li></ul>
+          </article>
+          <article class="pricing-card rounded-2xl border border-yellow/35 bg-white/[0.045] p-6 shadow-2xl shadow-black/20 backdrop-blur-xl">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-yellow">05 / authority</p>
+            <h3 class="mt-5 text-2xl font-medium text-pink">Authority Site</h3>
+            <p class="mt-3 min-h-20 text-sm leading-6 text-white/65">A substantial rebuild, migration, catalogue, or digital foundation for a growing operation.</p>
+            <p class="mt-7 text-4xl font-thin text-yellow">R17,500</p><p class="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-white/45">once-off · launch price</p>
+            <ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Deeper information architecture</li><li>Multiple content pathways</li><li>Migration or advanced foundation</li><li>Custom scope confirmed separately</li></ul>
+          </article>
+        </div>
+        <p class="mt-6 text-xs leading-6 text-white/50">All prices shown in South African rand. Domain registration, email, hosting plans, paid services, third-party tools, and custom integrations are included only where the written proposal says so.</p>
+      </div>
+    </section>
 
-  <section class="py-24 px-6 border-t border-pink/10"><div class="max-w-6xl mx-auto"><div class="eyebrow text-yellow mb-6">04 · Add-ons</div><h2 class="text-4xl md:text-6xl font-thin text-white mb-12">Add what <span class="text-pink">fits your business</span></h2><div class="grid md:grid-cols-2 gap-12"><div class="space-y-5">
-    <div class="flex justify-between items-baseline gap-5 border-b border-white/10 pb-4"><div><h3 class="text-lg font-medium text-pink">Google Business Setup</h3><p class="text-sm text-white/70 mt-1">Profile optimization and verification</p></div><div class="text-xl text-white whitespace-nowrap">R370</div></div>
-    <div class="flex justify-between items-baseline gap-5 border-b border-white/10 pb-4"><div><h3 class="text-lg font-medium text-pink">Google Business Management</h3><p class="text-sm text-white/70 mt-1">2 posts per month, review responses</p></div><div class="text-xl text-white whitespace-nowrap">R610/mo</div></div>
-    <div class="flex justify-between items-baseline gap-5 border-b border-white/10 pb-4"><div><h3 class="text-lg font-medium text-pink">Social Platform Rebrand</h3><p class="text-sm text-white/70 mt-1">Custom banner, optimized profile, bio update</p></div><div class="text-xl text-white whitespace-nowrap">R370/platform</div></div>
-    <div class="flex justify-between items-baseline gap-5 border-b border-white/10 pb-4"><div><h3 class="text-lg font-medium text-pink">Video Content</h3><p class="text-sm text-white/70 mt-1">2 YouTube-quality videos planned, edited, uploaded</p></div><div class="text-xl text-white whitespace-nowrap">R1,270/mo</div></div>
-  </div><div><h3 class="text-lg font-medium text-pink mb-4">E-commerce Management</h3><div class="space-y-3 text-sm text-white/80"><div class="flex justify-between border-b border-white/10 pb-3"><span>Up to 10 products</span><span>R610/mo</span></div><div class="flex justify-between border-b border-white/10 pb-3"><span>Up to 20 products</span><span>R1,270/mo</span></div><div class="flex justify-between border-b border-white/10 pb-3"><span>Up to 50 products</span><span>R2,470/mo</span></div><div class="flex justify-between border-b border-white/10 pb-3"><span>Up to 100 products</span><span>R4,970/mo</span></div></div><p class="text-xs text-white/60 mt-4">Includes product uploads, edits, price changes, image swaps, category updates, and basic product SEO.</p></div></div><div class="grid md:grid-cols-2 gap-5 mt-10"><article class="glass rounded-xl p-7"><div class="eyebrow text-yellow mb-2">TIER 4 · ADD-ON R3,700/MO</div><h3 class="text-xl text-pink">AI Operations Layer</h3><a class="text-sm text-white/65 hover:text-pink" href="capabilities.html">View included capabilities →</a></article><article class="glass rounded-xl p-7"><div class="eyebrow text-yellow mb-2">TIER 5 · ADD-ON R6,100/MO</div><h3 class="text-xl text-pink">AI Growth Engine</h3><a class="text-sm text-white/65 hover:text-pink" href="capabilities.html">View included capabilities →</a></article></div></div></section>
+    <section class="border-t border-pink/10 px-6 py-24" aria-labelledby="payment-structure">
+      <div class="mx-auto max-w-7xl">
+        <p class="mb-6 font-mono text-xs uppercase tracking-[0.28em] text-green">02 · payment structure</p>
+        <h2 id="payment-structure" class="mb-12 text-4xl font-thin tracking-[-0.03em] md:text-6xl">See it first. <span class="text-pink">Pay in stages.</span></h2>
+        <div class="grid gap-5 lg:grid-cols-3">
+          <article class="rounded-2xl border border-yellow/35 bg-white/[0.045] p-7"><p class="font-mono text-xs uppercase tracking-[0.2em] text-yellow">before commitment</p><h3 class="mt-5 text-2xl font-medium text-pink">Visual demo</h3><p class="mt-4 text-sm leading-7 text-white/70">A proper HTML visual demo may be prepared so both sides can assess the direction, brand treatment, layout, and level of finish before production begins.</p><p class="mt-5 text-sm leading-7 text-white/55">The demo is not unlimited production work. New concepts, substantial copywriting, extensive image editing, or multiple redesign directions may be quoted separately.</p></article>
+          <article class="rounded-2xl border border-pink/35 bg-white/[0.045] p-7"><p class="font-mono text-xs uppercase tracking-[0.2em] text-pink">small sites</p><h3 class="mt-5 text-2xl font-medium text-pink">50 / 50</h3><p class="mt-4 text-sm leading-7 text-white/70">A 50% deposit is required before production work begins. The remaining 50% is due before the site goes live or final files are released.</p><p class="mt-5 text-sm leading-7 text-white/55">The preview may be technically ready before final payment. A review link is not a production launch.</p></article>
+          <article class="rounded-2xl border border-green/35 bg-white/[0.045] p-7"><p class="font-mono text-xs uppercase tracking-[0.2em] text-green">larger builds</p><h3 class="mt-5 text-2xl font-medium text-pink">40 / 40 / 20</h3><p class="mt-4 text-sm leading-7 text-white/70">Larger builds, migrations, and Authority projects may use 40% to begin, 40% after design and core content approval, and 20% before launch or handover.</p><p class="mt-5 text-sm leading-7 text-white/55">The applicable schedule is confirmed in the written proposal before work begins.</p></article>
+        </div>
+      </div>
+    </section>
 
-  <section class="py-24 px-6 border-t border-pink/10"><div class="max-w-6xl mx-auto"><div class="eyebrow text-yellow mb-6">05 · Terms</div><h2 class="text-4xl md:text-6xl font-thin text-white mb-10">Launch <span class="text-pink">Terms</span></h2><ul class="space-y-4 text-base text-white/80 max-w-3xl"><li>40% deposit to book your project and begin planning</li><li>40% after design and core content structure are approved</li><li>20% on launch and handover</li><li>Delivery within the stated timeline of deposit</li><li>Launch pricing is currently active for founding clients</li></ul></div></section>
-  <section class="py-24 px-6 border-t border-pink/10 glow-hero"><div class="max-w-4xl mx-auto text-center"><h2 class="text-4xl md:text-6xl font-thin text-white mb-9">Ready to find your <span class="text-pink">build level?</span></h2><a href="start.html" class="inline-block px-8 py-4 rounded-lg bg-pink text-navy font-medium hover:bg-yellow">Start a Project</a></div></section>
-</main>
-<footer class="py-14 px-6 border-t border-pink/10"><div class="max-w-7xl mx-auto flex flex-col items-center gap-8"><nav class="flex flex-wrap justify-center gap-6 text-sm text-white/75"><a href="capabilities.html" class="hover:text-pink">Capabilities</a><a href="work.html" class="hover:text-pink">Selected Work</a><a href="pricing.html" class="hover:text-pink">Pricing</a><a href="start.html" class="hover:text-pink">Start a Project</a><a href="https://wa.me/277494692770" target="_blank" rel="noopener" class="text-green">WhatsApp Direct Chat</a></nav><div class="flex flex-wrap justify-center gap-6 text-sm text-white/55"><a href="#" class="hover:text-pink">LinkedIn</a><a href="#" class="hover:text-pink">GitHub</a><a href="#" class="hover:text-pink">Instagram</a><a href="#" class="hover:text-pink">X</a></div><div class="flex flex-col items-center gap-4"><img src="assets/caramel-logo.png" alt="Caramel Digital Studio Logo" class="h-24 w-24 object-cover"><div class="eyebrow text-white/40 text-xs text-center">GLOBAL OPERATIONS · HUMAN ORCHESTRATED · AI-POWERED</div></div><div class="text-xs text-white/35 pt-4 border-t border-white/5 w-full text-center">© 2026 CARAMEL DIGITAL STUDIO. ALL RIGHTS RESERVED.</div></div></footer>
+    <section class="border-t border-pink/10 px-6 py-24" aria-labelledby="care-packages">
+      <div class="mx-auto max-w-7xl">
+        <p class="mb-6 font-mono text-xs uppercase tracking-[0.28em] text-yellow">03 · hosting and website care</p>
+        <h2 id="care-packages" class="mb-12 text-4xl font-thin tracking-[-0.03em] md:text-6xl">Keep your site <span class="text-pink">running.</span></h2>
+        <div class="grid gap-5 md:grid-cols-3">
+          <article class="pricing-card rounded-2xl border border-yellow/30 bg-white/[0.045] p-7"><h3 class="text-2xl font-medium text-pink">Essential Hosting &amp; Care</h3><p class="mt-4 text-4xl font-thin text-yellow">R190<small class="text-sm text-white/60">/month</small></p><ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Hosting oversight on the agreed platform</li><li>SSL where supported</li><li>Basic deployment and uptime checks</li><li>One small agreed update per month</li></ul></article>
+          <article class="pricing-card rounded-2xl border border-pink/30 bg-white/[0.045] p-7"><h3 class="text-2xl font-medium text-pink">Managed Website Care</h3><p class="mt-4 text-4xl font-thin text-pink">R370<small class="text-sm text-white/60">/month</small></p><ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Everything in Essential Care</li><li>Defined content updates</li><li>Technical and dependency checks where applicable</li><li>Priority correction of minor issues</li></ul></article>
+          <article class="pricing-card rounded-2xl border border-green/30 bg-white/[0.045] p-7"><h3 class="text-2xl font-medium text-pink">Managed Care Plus</h3><p class="mt-4 text-4xl font-thin text-green">R610<small class="text-sm text-white/60">/month</small></p><ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Everything in Managed Care</li><li>More frequent agreed updates</li><li>Basic performance and SEO housekeeping</li><li>Monthly maintenance summary</li></ul></article>
+        </div>
+        <p class="mt-6 text-xs leading-6 text-white/50">Hosting care is not a guarantee against every outage, attack, provider change, or third-party failure. Domain, email, premium hosting, and paid service costs remain separate unless explicitly included.</p>
+      </div>
+    </section>
+
+    <section class="border-t border-pink/10 px-6 py-24" aria-labelledby="visibility-packages">
+      <div class="mx-auto max-w-7xl">
+        <p class="mb-6 font-mono text-xs uppercase tracking-[0.28em] text-green">04 · SEO and content</p>
+        <h2 id="visibility-packages" class="mb-12 text-4xl font-thin tracking-[-0.03em] md:text-6xl">Make the work <span class="text-pink">visible.</span></h2>
+        <div class="grid gap-5 md:grid-cols-3">
+          <article class="rounded-2xl border border-yellow/30 bg-white/[0.045] p-7"><p class="font-mono text-xs uppercase tracking-[0.2em] text-yellow">local starter</p><h3 class="mt-5 text-2xl font-medium text-pink">Visibility Starter</h3><p class="mt-4 text-4xl font-thin text-yellow">R1,200<small class="text-sm text-white/60">/month</small></p><ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Four social posts</li><li>Repurposing for Google Business</li><li>Four short blog or website updates</li><li>One monthly content direction check</li></ul></article>
+          <article class="rounded-2xl border border-pink/30 bg-white/[0.045] p-7"><p class="font-mono text-xs uppercase tracking-[0.2em] text-pink">content seed</p><h3 class="mt-5 text-2xl font-medium text-pink">SEO / Content Seed</h3><p class="mt-4 text-4xl font-thin text-pink">R610<small class="text-sm text-white/60">/month</small></p><ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Two SEO-led blog posts or updates</li><li>Keyword direction and branded image support</li><li>Distribution across two agreed platforms</li><li>Defined review/comment support</li></ul></article>
+          <article class="rounded-2xl border border-green/30 bg-white/[0.045] p-7"><p class="font-mono text-xs uppercase tracking-[0.2em] text-green">expanded visibility</p><h3 class="mt-5 text-2xl font-medium text-pink">SEO / Content Grow</h3><p class="mt-4 text-4xl font-thin text-green">R1,270<small class="text-sm text-white/60">/month</small></p><ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Four SEO-led blog posts or updates</li><li>Deeper keyword and content direction</li><li>Distribution across up to four platforms</li><li>Defined community-management scope</li></ul></article>
+        </div>
+        <p class="mt-6 text-xs leading-6 text-white/50">SEO and content work does not guarantee rankings, traffic, enquiries, reviews, or revenue. Output is defined by the selected plan and available source material.</p>
+      </div>
+    </section>
+
+    <section class="border-t border-pink/10 px-6 py-24" aria-labelledby="business-addons">
+      <div class="mx-auto max-w-7xl">
+        <p class="mb-6 font-mono text-xs uppercase tracking-[0.28em] text-yellow">05 · business add-ons</p>
+        <h2 id="business-addons" class="mb-12 text-4xl font-thin tracking-[-0.03em] md:text-6xl">Add what fits <span class="text-pink">the business.</span></h2>
+        <div class="grid gap-12 lg:grid-cols-2">
+          <div class="space-y-5">
+            <div class="flex items-start justify-between gap-5 border-b border-white/10 pb-5"><div><h3 class="text-lg font-medium text-pink">Google Business Setup</h3><p class="mt-1 text-sm leading-6 text-white/65">Profile setup or cleanup, categories, services, up to five catalogue items, image preparation, one poster, and three initial posts.</p></div><strong class="whitespace-nowrap text-xl text-yellow">R750</strong></div>
+            <div class="flex items-start justify-between gap-5 border-b border-white/10 pb-5"><div><h3 class="text-lg font-medium text-pink">Google Business Management</h3><p class="mt-1 text-sm leading-6 text-white/65">Defined monthly posts, profile updates, and review-response support.</p></div><strong class="whitespace-nowrap text-xl text-green">R450/mo</strong></div>
+            <div class="flex items-start justify-between gap-5 border-b border-white/10 pb-5"><div><h3 class="text-lg font-medium text-pink">Social Platform Setup</h3><p class="mt-1 text-sm leading-6 text-white/65">Profile setup or cleanup, bio, links, image treatment, and one launch asset.</p></div><strong class="whitespace-nowrap text-xl text-pink">R500/platform</strong></div>
+            <div class="flex items-start justify-between gap-5 border-b border-white/10 pb-5"><div><h3 class="text-lg font-medium text-pink">Branded Social Profile</h3><p class="mt-1 text-sm leading-6 text-white/65">Platform-specific profile treatment, banner, bio, links, and up to three launch graphics.</p></div><strong class="whitespace-nowrap text-xl text-pink">R750/platform</strong></div>
+            <div class="flex items-start justify-between gap-5 border-b border-white/10 pb-5"><div><h3 class="text-lg font-medium text-pink">Video Content</h3><p class="mt-1 text-sm leading-6 text-white/65">Two agreed videos planned, edited, and prepared for upload.</p></div><strong class="whitespace-nowrap text-xl text-yellow">R1,270/mo</strong></div>
+          </div>
+          <div>
+            <h3 class="mb-5 text-xl font-medium text-pink">E-commerce management</h3>
+            <div class="space-y-3 text-sm text-white/80"><div class="flex justify-between border-b border-white/10 pb-3"><span>Up to 10 products</span><strong>R610/mo</strong></div><div class="flex justify-between border-b border-white/10 pb-3"><span>Up to 20 products</span><strong>R1,270/mo</strong></div><div class="flex justify-between border-b border-white/10 pb-3"><span>Up to 50 products</span><strong>R2,470/mo</strong></div><div class="flex justify-between border-b border-white/10 pb-3"><span>Up to 100 products</span><strong>R4,970/mo</strong></div></div>
+            <p class="mt-5 text-sm leading-7 text-white/60">Includes agreed product uploads, edits, price changes, image swaps, category updates, and basic product SEO. Product photography, copywriting, inventory systems, and platform fees are separate.</p>
+            <div class="mt-10 grid gap-5 sm:grid-cols-2"><article class="rounded-2xl border border-yellow/30 bg-white/[0.045] p-6"><p class="font-mono text-xs uppercase tracking-[0.2em] text-yellow">tier 4 · add-on</p><h4 class="mt-4 text-xl text-pink">AI Operations Layer</h4><p class="mt-4 text-3xl font-thin text-white">R3,700<small class="text-sm text-white/60">/mo</small></p><p class="mt-3 text-sm leading-6 text-white/60">Defined automation and operational workflows, scoped after discovery.</p></article><article class="rounded-2xl border border-green/30 bg-white/[0.045] p-6"><p class="font-mono text-xs uppercase tracking-[0.2em] text-green">tier 5 · add-on</p><h4 class="mt-4 text-xl text-pink">AI Growth Engine</h4><p class="mt-4 text-3xl font-thin text-white">R6,100<small class="text-sm text-white/60">/mo</small></p><p class="mt-3 text-sm leading-6 text-white/60">A larger, defined automation and growth system, scoped separately.</p></article></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-t border-pink/10 px-6 py-24" aria-labelledby="brand-plans">
+      <div class="mx-auto max-w-7xl">
+        <p class="mb-6 font-mono text-xs uppercase tracking-[0.28em] text-pink">06 · brand direction</p>
+        <h2 id="brand-plans" class="mb-12 text-4xl font-thin tracking-[-0.03em] md:text-6xl">Build the <span class="text-pink">visual foundation.</span></h2>
+        <div class="grid gap-5 md:grid-cols-2"><article class="rounded-2xl border border-yellow/30 bg-white/[0.045] p-8"><h3 class="text-2xl font-medium text-pink">Brand Starter Add-on</h3><p class="mt-4 text-4xl font-thin text-yellow">from R750</p><p class="mt-5 text-sm leading-7 text-white/70">Logo refinement or simple logo treatment, colour direction, typography pairing, and basic website/social usage guidance.</p></article><article class="rounded-2xl border border-green/30 bg-white/[0.045] p-8"><h3 class="text-2xl font-medium text-pink">Full Brand Foundation</h3><p class="mt-4 text-4xl font-thin text-green">from R1,500</p><p class="mt-5 text-sm leading-7 text-white/70">Logo concept or refinement, colour system, typography system, core asset exports, and practical brand direction for the website and social platforms.</p></article></div>
+        <p class="mt-6 text-xs leading-6 text-white/50">Basic branding alignment is included in relevant website packages. A full identity system, extensive concepts, print production, or brand guidelines document is separate.</p>
+      </div>
+    </section>
+
+    <section class="border-t border-pink/10 px-6 py-24" aria-labelledby="empowerment-plans">
+      <div class="mx-auto max-w-7xl">
+        <p class="mb-6 font-mono text-xs uppercase tracking-[0.28em] text-green">07 · empowerment access</p>
+        <h2 id="empowerment-plans" class="mb-5 text-4xl font-thin tracking-[-0.03em] md:text-6xl">A professional site without the <span class="text-pink">large upfront cost.</span></h2>
+        <p class="mb-12 max-w-3xl text-base leading-7 text-white/65">For African founders, sole traders, community businesses, and small local enterprises. These are defined monthly access plans, not unlimited service plans.</p>
+        <div class="grid gap-5 md:grid-cols-3"><article class="rounded-2xl border border-yellow/35 bg-white/[0.045] p-7"><p class="font-mono text-xs uppercase tracking-[0.2em] text-yellow">one-page</p><h3 class="mt-5 text-2xl font-medium text-pink">Empowerment One-Page</h3><p class="mt-4 text-4xl font-thin text-yellow">R399<small class="text-sm text-white/60">/month</small></p><p class="mt-2 text-xs text-white/50">12-month minimum</p><ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>One responsive page</li><li>Hosting support and SSL where supported</li><li>One small monthly content update</li><li>Basic metadata and contact route</li></ul></article><article class="rounded-2xl border border-pink/35 bg-white/[0.045] p-7"><p class="font-mono text-xs uppercase tracking-[0.2em] text-pink">presence</p><h3 class="mt-5 text-2xl font-medium text-pink">Empowerment Presence</h3><p class="mt-4 text-4xl font-thin text-pink">R699<small class="text-sm text-white/60">/month</small></p><p class="mt-2 text-xs text-white/50">12-month minimum · up to three pages</p><ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Responsive three-page site</li><li>Hosting support and SSL where supported</li><li>One small monthly content update</li><li>Basic visibility foundation</li></ul></article><article class="rounded-2xl border border-green/35 bg-white/[0.045] p-7"><p class="font-mono text-xs uppercase tracking-[0.2em] text-green">business</p><h3 class="mt-5 text-2xl font-medium text-pink">Empowerment Business</h3><p class="mt-4 text-4xl font-thin text-green">R999<small class="text-sm text-white/60">/month</small></p><p class="mt-2 text-xs text-white/50">12-month minimum · up to five pages</p><ul class="mt-7 space-y-3 text-sm leading-6 text-white/75"><li>Responsive five-page site</li><li>Hosting support and SSL where supported</li><li>One small monthly content update</li><li>Defined enquiry and local-visibility path</li></ul></article></div>
+        <div class="mt-8 rounded-2xl border border-green/20 bg-green/[0.05] p-7 text-sm leading-7 text-white/70"><strong class="text-green">Empowerment conditions:</strong> Domain registration or renewal, paid email, premium hosting, plugins, APIs, ecommerce, bookings, databases, CRM, AI systems, new pages, extensive copywriting, and unlimited edits are separate. After the 12-month minimum and once the account is paid up, the client may continue care, request a paid handover, or move to an agreed ownership arrangement. The written agreement controls the treatment of code, design assets, domain, hosting, and licensed services.</div>
+      </div>
+    </section>
+
+    <section class="border-t border-pink/10 px-6 py-24" aria-labelledby="terms">
+      <div class="mx-auto max-w-7xl">
+        <p class="mb-6 font-mono text-xs uppercase tracking-[0.28em] text-yellow">08 · client terms</p>
+        <h2 id="terms" class="mb-12 text-4xl font-thin tracking-[-0.03em] md:text-6xl">Clear terms. <span class="text-pink">Better work.</span></h2>
+        <div class="grid gap-x-12 gap-y-10 lg:grid-cols-2">
+          <div><h3 class="text-xl font-medium text-pink">Scope and extras</h3><p class="mt-3 text-sm leading-7 text-white/70">Prices are starting prices for the stated scope. New pages, new features, changed direction, extensive content, image production, integrations, ecommerce, booking, CRM, AI workflows, or work outside the agreed scope are quoted before they begin.</p></div>
+          <div><h3 class="text-xl font-medium text-pink">Client content and approvals</h3><p class="mt-3 text-sm leading-7 text-white/70">The client supplies or approves public business information, copy, images, logos, prices, contact details, and legal wording. Caramel Digital Studio does not invent reviews, credentials, locations, registrations, outcomes, or partner claims.</p></div>
+          <div><h3 class="text-xl font-medium text-pink">Revisions</h3><p class="mt-3 text-sm leading-7 text-white/70">A revision round means one consolidated set of changes returned together. The included rounds apply to the agreed direction. A new direction after approval may be quoted separately.</p></div>
+          <div><h3 class="text-xl font-medium text-pink">Third-party services</h3><p class="mt-3 text-sm leading-7 text-white/70">Domain registration, email, hosting upgrades, form services, stock media, fonts, APIs, plugins, analytics, and other third-party costs are separate unless the proposal says otherwise.</p></div>
+          <div><h3 class="text-xl font-medium text-pink">Launch and handover</h3><p class="mt-3 text-sm leading-7 text-white/70">A preview may be ready before final payment. Production publication, domain connection, final file release, source handover, and transfer of managed services remain subject to payment of all amounts due.</p></div>
+          <div><h3 class="text-xl font-medium text-pink">Results</h3><p class="mt-3 text-sm leading-7 text-white/70">SEO, traffic, enquiries, reviews, sales, and revenue depend on the market, offer, competition, content, approvals, and external platforms. Defined work can be delivered; outcomes cannot be guaranteed.</p></div>
+        </div>
+        <div class="mt-12 rounded-2xl border border-pink/25 bg-pink/[0.06] p-7 text-sm leading-7 text-white/75"><strong class="text-pink">Payment summary:</strong> Small sites use 50% to begin and 50% before launch or final file release. Larger builds may use 40% to begin, 40% after design and core content approval, and 20% before launch or handover. Empowerment plans begin with the first monthly payment and carry a 12-month minimum term.</div>
+      </div>
+    </section>
+
+    <section id="start" class="border-t border-pink/10 px-6 py-24">
+      <div class="mx-auto max-w-4xl text-center"><h2 class="text-4xl font-thin tracking-[-0.03em] md:text-6xl">Ready to find your <span class="text-pink">build level?</span></h2><p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/65">Start with a conversation. Where useful, a proper HTML demo gives both sides something real to review before the project is committed.</p><a href="start.html" class="mt-9 inline-block rounded-lg bg-pink px-8 py-4 font-medium text-navy hover:bg-yellow">Start a Project</a></div>
+    </section>
+  </main>
+
+  <footer class="border-t border-pink/10 px-6 py-14"><div class="mx-auto flex max-w-7xl flex-col items-center gap-8"><nav class="flex flex-wrap justify-center gap-6 text-sm text-white/75" aria-label="Footer navigation"><a href="capabilities.html" class="hover:text-pink">Capabilities</a><a href="work.html" class="hover:text-pink">Selected Work</a><a href="pricing.html" class="text-pink">Pricing</a><a href="start.html" class="hover:text-pink">Start a Project</a><a href="https://wa.me/277494692770" target="_blank" rel="noopener noreferrer" class="text-green">WhatsApp Direct Chat</a></nav><div class="flex flex-col items-center gap-4"><img src="assets/caramel-logo.png" alt="Caramel Digital Studio logo" class="h-24 w-24 object-cover"><p class="font-mono text-center text-xs uppercase tracking-[0.18em] text-white/40">Human orchestrated · AI-aware · built to grow</p></div><p class="w-full border-t border-white/5 pt-4 text-center text-xs text-white/35">© 2026 Caramel Digital Studio. All rights reserved.</p></div></footer>
 </body>
 </html>
