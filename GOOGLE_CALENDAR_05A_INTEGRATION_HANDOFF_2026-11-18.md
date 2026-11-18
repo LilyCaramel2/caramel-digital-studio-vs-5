@@ -19,6 +19,8 @@ Silo A contains the core business assets and agent records for:
 - High Tide Tours
 - Cape Plaster and Pools
 
+Gaia Vedic Akasha is the Lotus OS Lily-code build. Its system records, architecture notes, development logs, and Gemini instructions belong in the Silo A core-business systems structure.
+
 Suggested root folder:
 
 `Caramel Business Systems`
