@@ -12,6 +12,7 @@ This file is the durable coordination log for agents and instances working on th
 6. Never publish or deploy without a separate owner approval after the review build is checked.
 7. Never expose internal hourly, weekly, quarterly, or effective-rate calculations on the public site.
 8. Write in affirmative language. Describe what each service delivers, how it works, and who it helps. Remove negative comparisons and exclusion-led explanations from public copy. Prefer plain, direct sentences.
+9. Read `AGENT_HANDOFF_2026-11-18_CARAMEL_VOICE.md` before writing public copy. Use Caramel’s agentic-age positioning, founder-led delivery, built-in lead generation, direct working relationship, and staged path into connected systems.
 
 ---
 
