@@ -11,6 +11,7 @@ This file is the durable coordination log for agents and instances working on th
 5. Keep the matching GitHub Issue updated so agents can coordinate outside a single Manus instance.
 6. Never publish or deploy without a separate owner approval after the review build is checked.
 7. Never expose internal hourly, weekly, quarterly, or effective-rate calculations on the public site.
+8. Write in affirmative language. Describe what each service delivers, how it works, and who it helps. Remove negative comparisons and exclusion-led explanations from public copy. Prefer plain, direct sentences.
 
 ---
 
