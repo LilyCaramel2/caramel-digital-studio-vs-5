@@ -7,9 +7,13 @@ description: Build and maintain Caramel Digital Studio websites, pricing pages, 
 
 Use this skill for Caramel Digital Studio repository work and client-facing digital-system planning.
 
+Apply `AGENT_LANGUAGE_PROTOCOL.md` to every Caramel output: website copy, content, client replies, proposals, invoices, invoice packs, forms, chatbot responses, agent records, and future Next.js interfaces. The canonical protocol carries the shared language, negative-comparison, word-filter, and handover rules.
+
 ## Current repository mode
 
 Treat `LilyCaramel2/caramel-digital-studio-vs-5` as a static HTML, CSS, Tailwind CDN, and JavaScript site until Melissa explicitly approves a framework migration.
+
+Every Caramel site follows the same sequence: static HTML, CSS, Tailwind, and JavaScript first; review and owner approval next; a separate Next.js migration later. Keep Next.js, HubSpot, Supabase, Render, Linear, and chatbot systems out of the current static source until the later phase is approved.
 
 Keep Next.js, HubSpot, Supabase, Render, Linear, and advanced application architecture in future-phase handovers. Prepare migration notes and component plans separately. Keep the current static build clean and coherent.
 
@@ -77,6 +81,8 @@ Avoid the words `not`, `real`, `actual`, and `human` except when a precise techn
 
 Use `AGENT_HANDOFF_TEMPLATE.md` for each meaningful task. Record the repository, branch, source inspected, decisions, files changed, checks, open decisions, deployment state, owner approval, next action, commit, and GitHub Issue.
 
+Start the handover at the beginning of the task. Add the baseline repository state and intended scope first, then update the same handover as work progresses. Finish with the exact next action so another agent can continue after a context limit or token interruption.
+
 Use Markdown handovers, code drafts, checklists, and GitHub Issue updates for this solo-developer workflow. Prepare a presentation outline only as an internal planning note when useful. Produce a deck after Melissa explicitly requests one.
 
 ## Quality gate
@@ -91,4 +97,5 @@ Before delivery:
 - Scan new public copy for restricted vocabulary and long em dashes.
 - Keep secrets in secure storage.
 - Record the exact next action in the handover and GitHub Issue.
+- Leave a complete handover before ending the task, even when the work remains in review.
 - Request owner approval before merge or publication.

@@ -175,3 +175,37 @@ Updated the active Caramel-specific and transferable client-build skills with th
 ### Next action
 
 Create a review build that integrates 05A into `pricing.html`, preserves the existing Web3Forms route, and replaces the draft-only styling with the pricing page’s established layout tokens. Keep Calendar URLs as placeholders and request owner review before merge or publication.
+
+
+## 2026-11-23 — static-first architecture rule reaffirmed
+
+Every site begins as a static HTML, CSS, Tailwind, and JavaScript build. The static version receives review and owner approval first. The approved site moves to Next.js later as a separate connected-systems phase. Next.js, HubSpot, Supabase, Render, Linear, and chatbot systems remain outside the current static source until that phase receives approval.
+
+
+## 2026-11-23 — 05A review build integrated
+
+### Scope completed
+
+Integrated the 05A Digital Marketing Guidance section into `pricing.html` between Business Add-ons and Brand Direction. The section uses the existing dark pricing layout, shared visual tokens, `data-enquiry-form`, the project Web3Forms access-key pattern, and the shared deferred `script.js` handler.
+
+### Exact fields
+
+The form contains Name, Email, Business or project, Website, Guidance area, and Your priority. Guidance options are Digital marketing strategy, SEO and content, Social channel setup, AI tools and workflow, Connected systems planning, and Launch planning. Hidden provider fields include subject, sender name, and botcheck.
+
+### Checks
+
+The static parser found no local-link errors or duplicate IDs. The 05A form marker and shared script are present. All four required user fields are present and labelled. The draft Web3Forms key placeholder and Calendar URL placeholder are absent from the integrated pricing page. The 05A block contains no long em dash. HTTP served `pricing.html` with status 200, and the Web3Forms handler was served from `script.js`.
+
+Chromium renders were captured at 1440px, 768px, 390px, and 320px widths. Desktop, tablet, mobile, and narrow layouts rendered successfully. The mobile navigation toggle is active through the shared script. The review build remains owner-review material.
+
+### Language and skill governance
+
+Created `AGENT_LANGUAGE_PROTOCOL.md` as the shared language, word-filter, negative-comparison, static-first, and handover source for every build. Updated the Caramel skill, generic client-build skill, handover template, and current log. Created the separate Lotus OS Gaia skill and kept its mission and architecture guidance isolated from Caramel.
+
+### Pricing and seasonal note
+
+No summer-launch, Christmas, January, FOMO, or future pricing increase copy was added. Those commercial decisions remain open for a separate pricing-content approval pass. Existing locked pricing remains unchanged.
+
+### Next action
+
+Review the 05A section in the live review build, approve the consultation wording and prices, create the Google Calendar appointment schedules, then replace the Calendar placeholders in a separate approved pass. Keep Next.js and connected systems in the later migration phase.

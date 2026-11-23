@@ -4,6 +4,8 @@
 
 Continue from the current Version 5 repository and Issue #1. Keep the live website in the current static HTML, CSS, Tailwind CDN, and JavaScript build.
 
+Every site follows the static-first sequence: build the static site, review and approve it, then move the approved site to Next.js as a separate later phase. Keep the current 05A work in the static build.
+
 ## Required work
 
 1. Review Issue #1, `AGENT_HANDOFF_LOG.md`, `AGENT_HANDOFF_TEMPLATE.md`, and the latest pricing repair commit before editing.
@@ -13,6 +15,7 @@ Continue from the current Version 5 repository and Issue #1. Keep the live websi
 5. Insert approved Google Calendar booking URLs after the owner creates the appointment schedules. Keep placeholders until then.
 6. Run desktop, mobile, accessibility, link, language, and form-state checks.
 7. Record the files, checks, open booking URL decision, and review state in the handoff template and Issue #1.
+8. Start and complete a Markdown handover for this task, even when the result remains a review build or the task ends early.
 
 ## Future connected-systems boundary
 

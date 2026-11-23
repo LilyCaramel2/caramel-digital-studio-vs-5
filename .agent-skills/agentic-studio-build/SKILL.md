@@ -7,6 +7,8 @@ description: Plan and deliver staged client websites and digital systems across 
 
 Use this skill for reusable client-build workflows where several agents or project phases share one repository and delivery record.
 
+When a project contains `AGENT_LANGUAGE_PROTOCOL.md`, load it as the shared baseline for agent communication, public copy, client replies, invoices, forms, chatbots, and handovers. Apply client-specific voice rules after the shared baseline. Keep the baseline portable across industries and project scales.
+
 ## Discovery gate
 
 Before editing, identify the client, audience, repository, branch, current stack, live route, approved visual system, locked content, providers, credentials boundary, deployment path, and owner approval state.
@@ -16,6 +18,8 @@ Read the project handover, issue board, current source, and any approved brand o
 ## Preserve the current layer
 
 Keep the existing stack until the owner approves a migration. Extend the current implementation with native patterns. Treat a future framework as a separate phase with a written architecture handoff and a review checkpoint.
+
+For every website, build the static HTML, CSS, Tailwind, and JavaScript version first. Complete review and owner approval before moving that approved site to Next.js. Keep application, CRM, database, hosting, project-operations, and chatbot work in the later connected-systems phase.
 
 Avoid mixing framework files into a static site. Keep provider integrations proportionate to the current layer. Use placeholders for owner-supplied URLs, keys, account IDs, and schedules.
 
@@ -59,8 +63,12 @@ Use a Markdown handover containing:
 - one next action;
 - commit and issue references.
 
+Create the handover at task start with the baseline state and intended scope. Keep adding findings, decisions, changed files, checks, and open items during the task. Finish with one clear continuation action so a later agent can resume after a context limit, token interruption, or handoff.
+
 Use GitHub Issues as the coordination board. Write one concise issue update per meaningful batch. Keep presentation outlines as optional planning notes. Create a deck only when the owner requests one.
 
 ## Delivery gate
 
 Before merge or publication, confirm that the intended layer remains intact, locked decisions remain preserved, new copy follows the audience rules, links and forms work, accessibility checks pass or have recorded findings, credentials remain protected, and owner approval is recorded.
+
+Always leave the completed handover and coordination update, including for review builds and partial implementation batches.
