@@ -150,3 +150,28 @@ The owner must supply or approve the live Google Calendar appointment URLs. The 
 ### Next concrete action
 
 The next agent should review Issue #1, integrate the 05A component into `pricing.html`, connect the approved booking URLs, run desktop/mobile/accessibility/link/language/form checks, and prepare the separate HubSpot/Supabase/Render/Linear architecture handoff.
+
+
+## 2026-11-23 — 05A pre-integration inspection
+
+### Repository state
+
+The repository is on `main`, clean, and aligned with `origin/main` at commit `03051cd` before this inspection.
+
+### Inspected
+
+Reviewed `NEXT_AGENT_TASK_05A_AND_CONNECTED_SYSTEMS.md`, `pricing.html`, `start.html`, `script.js`, `styles.css`, `PRICING_05A_WEB3FORMS_CONSULTATION_COMPONENT.html`, and `GOOGLE_CALENDAR_05A_BOOKING_WIDGET.html`.
+
+### Findings
+
+`pricing.html` is a static Tailwind CDN page with inline section patterns and shared `styles.css` tokens. Business Add-ons is section 05 and Brand Direction is section 06, so 05A belongs between those sections. `start.html` already contains the active Web3Forms access-key field and the `data-enquiry-form` marker. `script.js` submits every matching form to the Web3Forms API and provides status, success, and error states. A Web3Forms link is unnecessary for the current integration. Dashboard access becomes useful for delivery settings, recipient changes, spam controls, or delivery review.
+
+The current 05A draft uses a placeholder access key and a separate visual treatment, so the next implementation pass should copy its fields and positive wording into the pricing page while adopting the existing pricing section classes and project access-key pattern. Google Calendar URLs remain owner-supplied placeholders until appointment schedules exist.
+
+### Changes in this inspection pass
+
+Updated the active Caramel-specific and transferable client-build skills with the inspected pricing, form-marker, access-key, status-state, placeholder, and provider-reuse rules. No public pricing source was changed.
+
+### Next action
+
+Create a review build that integrates 05A into `pricing.html`, preserves the existing Web3Forms route, and replaces the draft-only styling with the pricing page’s established layout tokens. Keep Calendar URLs as placeholders and request owner review before merge or publication.

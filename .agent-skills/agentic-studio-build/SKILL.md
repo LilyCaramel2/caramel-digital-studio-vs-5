@@ -32,6 +32,8 @@ Avoid mixing framework files into a static site. Keep provider integrations prop
 
 For each integration, record the provider, account owner, purpose, data fields, URL or key status, privacy considerations, test method, fallback path, and phase. Keep secrets out of source. Keep forms and booking journeys usable before provider automation is complete.
 
+For a static Web3Forms integration, inspect the existing form marker, hidden access-key field, JavaScript submission handler, status element, success state, error state, and direct-contact fallback before adding a second form. Reuse the established field names and provider route. Keep any active browser-side provider key confined to the approved project source and keep review drafts on placeholders.
+
 ## Language and audience
 
 Choose the audience and language variant before writing. Use UK English for UK and South African audiences. Use US English for US audiences. Use plain, specific, affirmative sentences.

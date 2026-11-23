@@ -33,6 +33,8 @@ Add new sections through existing classes and patterns. Keep additions native to
 
 The 05A Digital Marketing Guidance section belongs after Business Add-ons and before Brand Direction on the pricing page.
 
+The current `pricing.html` uses Tailwind CDN utilities, the shared `styles.css` tokens, and inline section patterns. The existing enquiry route is in `start.html`: it contains the active Web3Forms access key and a form marked `data-enquiry-form`. The shared `script.js` submits every matching form to the Web3Forms API, so an integrated 05A form can use the same marker and field contract.
+
 For the current static build:
 
 - Use the existing `data-enquiry-form` Web3Forms handler.
@@ -41,6 +43,9 @@ For the current static build:
 - Use positive button copy such as `Book a conversation`, `Send consultation enquiry`, and `Start your next step`.
 - Keep Google Calendar booking URLs as a later provider connection after the owner creates the appointment schedules.
 - Keep the free project-fit conversation and paid consultation options clearly separated in the copy.
+- Reuse the current access key during the approved integration pass. Keep the key out of handover drafts and skill examples.
+- Treat `PRICING_05A_WEB3FORMS_CONSULTATION_COMPONENT.html` as a review component. Replace its placeholder key with the existing project value only in the working site source after owner review.
+- Use the existing pricing section classes and visual tokens rather than introducing a separate form language.
 
 ## Staged architecture
 
