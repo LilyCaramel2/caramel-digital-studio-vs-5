@@ -123,3 +123,30 @@ No Vercel deployment, Cloudflare change, booking integration, GitHub Actions wor
 After the push, the first raw public requests returned a 403 edge response. A retry with a standard browser user-agent returned HTTP 200 for `pricing.html`, `start.html`, and `work.html`.
 
 The live HTML confirmed the corrected `#030508` near-black token, `R499` Care Plan pricing, `50% to begin` payment wording, and the direct Fiverr profile link. The live verification completed successfully through the existing Cloudflare/Vercel path. No further repair batch is pending from this audit.
+
+
+## 2026-11-23 — 05A static integration and skill workflow prepared
+
+### Agent
+
+Manus, current sandbox session.
+
+### Confirmed boundary
+
+The current Version 5 website remains a static HTML, CSS, Tailwind CDN, and JavaScript build. The 05A Digital Marketing Guidance section belongs in the current pricing page and uses the existing Web3Forms enquiry handler. Next.js, HubSpot, Supabase, Render, and Linear remain a separate future connected-systems task.
+
+### Created
+
+- `AGENT_HANDOFF_TEMPLATE.md` with the latest audience, language, positive-copy, restricted-vocabulary, architecture, validation, and coordination rules.
+- `PRICING_05A_WEB3FORMS_CONSULTATION_COMPONENT.html` with Web3Forms-compatible consultation fields and positive CTA copy.
+- `NEXT_AGENT_TASK_05A_AND_CONNECTED_SYSTEMS.md` with the exact Issue #1 follow-on task.
+- `/home/ubuntu/skills/caramel-digital-studio/SKILL.md` with Caramel-specific repository, visual, language, 05A, Google Workspace, and staged architecture rules.
+- `/home/ubuntu/skills/agentic-studio-build/SKILL.md` with the transferable client-build workflow.
+
+### Open decisions
+
+The owner must supply or approve the live Google Calendar appointment URLs. The Web3Forms access key remains an owner-managed project value. The 05A section requires owner review before merge or publication.
+
+### Next concrete action
+
+The next agent should review Issue #1, integrate the 05A component into `pricing.html`, connect the approved booking URLs, run desktop/mobile/accessibility/link/language/form checks, and prepare the separate HubSpot/Supabase/Render/Linear architecture handoff.
