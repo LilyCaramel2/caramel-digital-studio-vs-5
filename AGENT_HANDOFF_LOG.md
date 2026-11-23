@@ -101,3 +101,14 @@ The repair is uncommitted and requires owner review. Run source, accessibility, 
 ### Next concrete action
 
 Render and review the four changed public pages, then ask Lily to approve the named repository, branch, and phase before committing, pushing, or deploying.
+
+
+## 2026-11-23 — repair committed and pushed
+
+The pricing/style diff was reviewed again after the initial repair. The remaining pricing-page glow fields were reduced from `bg-pink/10` and `bg-yellow/10` to near-invisible values, the pricing cards moved from heavy `shadow-2xl`/`backdrop-blur-xl` treatment to restrained black `shadow-lg`/`backdrop-blur-md`, and the pink elevated-card hover shadow was replaced with a black depth shadow.
+
+Source validation passed for HTML parsing, approved Care Plan prices, removal of the old Care Plan prices, six-month terms, 50/50 and 40/40/20 payment language, Fiverr and LinkedIn URLs, no placeholder links, near-black tokens, no guessed Learn AI to Earn domain, no residual pricing glow fields, and no pink hover shadow. `git diff --check` passed.
+
+Commit `dc37624` — `repair CDS V5 pricing proof and visual system` — was pushed successfully to `origin/main` in `LilyCaramel2/caramel-digital-studio-vs-5`.
+
+No Vercel deployment, Cloudflare change, booking integration, GitHub Actions workflow, or unrelated silo work was performed. The next concrete action is live/public deployment verification through the existing hosting path, not another content-planning pass.

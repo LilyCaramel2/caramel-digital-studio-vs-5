@@ -206,7 +206,7 @@ Do not widen this batch into a migration, booking integration, or deployment. Th
 7. Record any remaining issues in the matching GitHub Issue or `AGENT_HANDOFF_LOG.md`.
 8. Present the review build to Lily for approval.
 
-The current execution is authorized to commit and push the named CDS repository and `main` branch. It does not authorize a Vercel/Cloudflare deployment, consultation/booking integration, or changes outside this repository.
+The current execution committed and pushed the named CDS repository and `main` branch as `dc37624` (`repair CDS V5 pricing proof and visual system`). It did not authorize or perform a Vercel/Cloudflare deployment, consultation/booking integration, or changes outside this repository.
 
 ## Repository state at handoff creation
 
@@ -220,7 +220,7 @@ The working clone began at `1ba2e2b` on `main`, matching `origin/main`. The curr
 - `work.html`
 - `AI_HANDOFF_CDS_AUDIT_AND_NEXT_BATCH_2026-11-23.md`
 
-Commit and push are being performed in this repair batch after the recorded validation checks.
+Commit and push completed in this repair batch after the recorded validation checks. The resulting commit is `dc37624` on `main`.
 
 ## Source references
 
