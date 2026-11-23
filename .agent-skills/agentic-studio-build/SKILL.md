@@ -21,6 +21,8 @@ Keep the existing stack until the owner approves a migration. Extend the current
 
 For every website, build the static HTML, CSS, Tailwind, and JavaScript version first. Complete review and owner approval before moving that approved site to Next.js. Keep application, CRM, database, hosting, project-operations, and chatbot work in the later connected-systems phase.
 
+When a migration is on hold, keep the current layer healthy and deliver approved static improvements, QA, documentation, and handovers before resuming connected systems.
+
 Avoid mixing framework files into a static site. Keep provider integrations proportionate to the current layer. Use placeholders for owner-supplied URLs, keys, account IDs, and schedules.
 
 ## Stage the work

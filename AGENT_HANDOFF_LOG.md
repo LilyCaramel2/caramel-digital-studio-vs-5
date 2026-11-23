@@ -209,3 +209,8 @@ No summer-launch, Christmas, January, FOMO, or future pricing increase copy was 
 ### Next action
 
 Review the 05A section in the live review build, approve the consultation wording and prices, create the Google Calendar appointment schedules, then replace the Calendar placeholders in a separate approved pass. Keep Next.js and connected systems in the later migration phase.
+
+
+## 2026-11-23 — January pricing draft and migration hold
+
+Created `JANUARY_PRICING_AND_CHRISTMAS_PROMO_GUIDELINES_DRAFT.md` and `NEXT_AGENT_TODO_AND_HANDOVER_2026-11-23.md`. The current priority is the static website, 05A consultation, Google Calendar setup, seasonal approval, pricing QA, and agent handovers. The Next.js migration and connected systems remain on hold.

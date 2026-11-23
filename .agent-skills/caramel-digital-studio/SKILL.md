@@ -15,6 +15,8 @@ Treat `LilyCaramel2/caramel-digital-studio-vs-5` as a static HTML, CSS, Tailwind
 
 Every Caramel site follows the same sequence: static HTML, CSS, Tailwind, and JavaScript first; review and owner approval next; a separate Next.js migration later. Keep Next.js, HubSpot, Supabase, Render, Linear, and chatbot systems out of the current static source until the later phase is approved.
 
+When the owner places the migration phase on hold, prioritise the static website, pricing, consultation, booking, content, QA, and handover work. Keep migration notes available without implementing them.
+
 Keep Next.js, HubSpot, Supabase, Render, Linear, and advanced application architecture in future-phase handovers. Prepare migration notes and component plans separately. Keep the current static build clean and coherent.
 
 ## Before editing
