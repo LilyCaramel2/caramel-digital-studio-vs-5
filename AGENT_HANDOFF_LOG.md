@@ -66,3 +66,38 @@ It contains the tiered pricing ladder, Stage 1–3 fixed prices, full SEO and lo
 ### Handoff status
 
 **Status: coordination system created; website implementation pending owner-approved review build.**
+
+
+## 2026-11-23 — public pricing, proof, copy, and visual repair batch
+
+### Agent
+
+Manus, current sandbox session.
+
+### Inspected
+
+Reviewed the current `main` checkout, `index.html`, `pricing.html`, `start.html`, `work.html`, `capabilities.html`, `styles.css`, the public Fiverr and LinkedIn profile URLs, the existing voice guidance, consultation integration records, and the Cloudflare/Vercel architecture note. Fiverr presented a human-verification challenge, so the exact review count was not independently read in this session.
+
+### Changed
+
+- Replaced the old R190/R370/R610 care cards with the approved R499/R699/R999 Care Plans and R1,500/R2,500/R4,500 setup fees.
+- Added the six-month initial term and month-to-month continuation with 30 days’ notice.
+- Removed the overlapping public Empowerment monthly cards and retained Empowerment as an access pathway delivered through the Care Plans.
+- Updated `start.html` with demo-first wording, 50/50 small-site terms, and 40/40/20 larger-build terms.
+- Corrected the work proof block with the owner-approved Fiverr claim, a direct Fiverr link, and a direct LinkedIn profile link.
+- Replaced placeholder social links with only the verified LinkedIn destination.
+- Restored the near-black visual system by reducing glass opacity and removing the shared radial glow treatment.
+- Rewrote the most generic homepage positioning around AI search/AEO, lead generation, repositioning, career landing pages, Learn AI to Earn, and connected systems.
+- Created `AI_HANDOFF_CDS_AUDIT_AND_NEXT_BATCH_2026-11-23.md` with the complete findings and next review batch.
+
+### Deliberately not changed
+
+No Gaia, Lily-code, Lotus OS, High Tide Tours, Learn AI to Earn, Cape Plaster & Pools, client site, Vite workflow, booking provider, payment integration, GitHub Actions workflow, Cloudflare configuration, Vercel configuration, deployment, commit, or push was performed.
+
+### Review state
+
+The repair is uncommitted and requires owner review. Run source, accessibility, link, and desktop/mobile visual checks before any commit or deployment.
+
+### Next concrete action
+
+Render and review the four changed public pages, then ask Lily to approve the named repository, branch, and phase before committing, pushing, or deploying.
