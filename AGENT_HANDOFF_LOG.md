@@ -13,6 +13,11 @@ This file is the durable coordination log for agents and instances working on th
 7. Never expose internal hourly, weekly, quarterly, or effective-rate calculations on the public site.
 8. Write in affirmative language. Describe what each service delivers, how it works, and who it helps. Remove negative comparisons and exclusion-led explanations from public copy. Prefer plain, direct sentences.
 9. Read `AGENT_HANDOFF_2026-11-18_CARAMEL_VOICE.md` before writing public copy. Use Caramel’s agentic-age positioning, founder-led delivery, built-in lead generation, direct working relationship, and staged path into connected systems.
+10. Use `AGENT_HANDOFF_TEMPLATE.md` for each meaningful agent handover. Record the task, repository, source inspected, decisions, files, checks, open decisions, deployment state, and next action.
+11. Use UK English for UK and South African audiences. Use US English for US audiences. Choose the audience before writing public copy.
+12. Use commas, full stops, colons, and semicolons in place of long em dashes. Keep language plain, direct, specific, and affirmative.
+13. Use agents, developers, orchestrators, owners, and users for role-specific references. Present AI as a tool that extends capability. Learn AI to Earn is the education pathway for learning how to wield, prompt, and secure AI tools.
+14. Use Markdown handovers, GitHub Issue updates, code drafts, and checklists for the solo-developer workflow. Presentation outlines remain planning notes unless Melissa explicitly requests a deck.
 
 ---
 
