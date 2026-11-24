@@ -6,6 +6,21 @@
 
 **Privacy rule:** Keep payment identifiers, account numbers, QR codes, passwords, access keys, and private links out of the repository, GitHub Issues, and public website source.
 
+## Payment choice and routing rule
+
+The client chooses the payment method that suits their country, account, currency, access, and preference. The agent asks for the client’s country and preferred method before sending private instructions.
+
+The approved payment menu can include:
+
+- South African EFT into the owner’s Capitec account.
+- Mukuru where it suits the client and the owner has an approved receiving process.
+- Wise payment link, card or Google Pay option where enabled, account details, email request, or another owner-approved Wise method.
+- Another owner-approved local or international method added through a private instruction set.
+
+Capitec is the receiving bank name. The owner decides which Capitec, Mukuru, Wise, or other receiving details are active. The agent presents available choices and sends only the selected method’s private instructions.
+
+The agent records the client’s country, selected method, amount, payment reference, receipt timestamp, and booking status in the owner’s private record. The repository stores the choice logic and placeholders only.
+
 ## Manual confirmation process
 
 1. Receive the consultation enquiry or booking request through Web3Forms or the approved email address.

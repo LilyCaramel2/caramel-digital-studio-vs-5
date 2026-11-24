@@ -42,6 +42,8 @@ For a static Web3Forms integration, inspect the existing form marker, hidden acc
 
 For a manual payment route, document the payment method, owner receipt check, confirmation sequence, private-data boundary, client email templates, and full booking-flow test. Test enquiry, payment instruction, payment confirmation, calendar invitation, meeting link, reminder, rescheduling, and cancellation as separate states.
 
+Let the client choose from the owner-approved payment menu. Record country, preferred method, selected route, amount, receipt reference, and confirmation state. Keep optional referral links as owner-supplied placeholders until the owner provides the final URL. Keep launch-phase payment decisions separate from future provider discovery.
+
 ## Language and audience
 
 Choose the audience and language variant before writing. Use UK English for UK and South African audiences. Use US English for US audiences. Use plain, specific, affirmative sentences.

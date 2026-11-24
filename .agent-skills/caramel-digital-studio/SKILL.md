@@ -51,6 +51,10 @@ For the current static build:
 - Keep the free project-fit conversation and paid consultation options clearly separated in the copy.
 - Use Google Pay or Wise manual payment confirmation for paid consultations. The owner checks receipt, then confirms the Calendar and Google Meet appointment.
 - Use Option A for the public advisory schedule: one 60-minute R900 session per booking. Treat the R2,700 three-session pathway as three separately confirmed sessions.
+- Present a client-choice payment menu: South African EFT to Capitec, Mukuru where suitable, Wise payment link or request, Wise account details, Wise email or Wisetag search, card or Google Pay through Wise where the owner’s account supports it, and other owner-approved methods.
+- Use the official bank spelling `Capitec`. Ask for the client’s country and preferred method. Send only the selected method’s private instructions.
+- Keep PayPal outside the current launch phase. Add it only after a separate owner-approved demand and account decision.
+- When a client chooses to open or use Wise through an onboarding route, use the owner-supplied Wise referral URL. Keep `[OWNER_WISE_REFERRAL_LINK]` as a placeholder until Melissa supplies the final link. Never invent a referral URL.
 - Read `GOOGLE_CALENDAR_05A_MANUAL_PAYMENT_TEMPLATES_2026-11-24.md` and `GOOGLE_CALENDAR_05A_BOOKING_FLOW_TEST_CHECKLIST_2026-11-24.md` before configuring or testing the booking flow.
 - Keep payment identifiers, account details, QR codes, access keys, and private links outside the repository and GitHub Issues.
 - Reuse the current access key during the approved integration pass. Keep the key out of handover drafts and skill examples.

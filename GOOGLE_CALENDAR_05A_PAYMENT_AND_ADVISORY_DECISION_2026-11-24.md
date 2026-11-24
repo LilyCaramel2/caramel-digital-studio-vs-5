@@ -4,7 +4,7 @@
 
 **Scope:** Caramel Digital Studio static 05A consultation flow.
 
-**Decision status:** Google Pay and Wise manual confirmation are the approved payment routes for this integration.
+**Decision status:** Client-choice payment menu with owner-confirmed receipt. PayPal sits outside the current launch phase.
 
 ## Recommended advisory structure
 
@@ -14,7 +14,7 @@ Use **Option A: separate advisory sessions**.
 - Duration: 60 minutes
 - Price: R900 per session
 - Booking model: each session is booked separately
-- Payment route: Google Pay or Wise, using owner-approved payment instructions
+   - Payment route: client chooses from the owner-approved payment menu
 - Delivery: Google Meet
 - Follow-up: the owner confirms the paid booking and sends the Calendar/Meet confirmation
 
@@ -32,13 +32,13 @@ Option B would sell one R2,700 advisory block containing three 60-minute session
 
 Payment confirms the consultation booking.
 
-The owner sends the approved Google Pay or Wise payment instructions after receiving the consultation enquiry or booking request. The client pays the listed South African rand amount and sends payment confirmation to the owner. The owner confirms receipt, schedules the Google Meet appointment, and sends the calendar confirmation.
+The agent asks for the client’s country and preferred payment method. The payment menu can include South African EFT to Capitec, Mukuru where suitable, Wise payment links or requests, Wise account details, Wise email or Wisetag search, card or Google Pay through Wise where enabled, and another owner-approved method. The client pays the listed South African rand amount and sends payment confirmation to the owner. The owner confirms receipt, schedules the Google Meet appointment, and sends the calendar confirmation.
 
 The consultation price covers the agreed session duration and preparation stated on the consultation page. Additional work receives a separate written quote before work begins.
 
 ### Advisory sessions
 
-Each Advisory Session costs R900 for 60 minutes. Three sessions represent a R2,700 advisory pathway. Each session is paid and scheduled separately through the approved Google Pay or Wise process.
+Each Advisory Session costs R900 for 60 minutes. Three sessions represent a R2,700 advisory pathway. Each session is paid and scheduled separately through the selected approved payment method.
 
 ### Changes and cancellations
 
@@ -48,8 +48,11 @@ The owner confirms any refund, credit, or rescheduling outcome directly with the
 
 ## Provider boundary
 
-- Google Pay: use only with the owner-approved receiving account or payment instructions.
-- Wise: use only with the owner-approved receiving account or payment instructions.
+- Capitec EFT: offer South African EFT through the owner-approved private instructions.
+- Mukuru: offer where the owner has an approved receiving process for the client’s route.
+- Wise: offer payment links, requests, account details, email or Wisetag search, card or Google Pay where enabled, and other owner-approved Wise methods.
+- Wise onboarding: use `[OWNER_WISE_REFERRAL_LINK]` until the owner supplies the final referral URL.
+- PayPal: future discovery only, outside the current launch phase.
 - Google Calendar: use for appointment availability, confirmations, reminders, and Google Meet links.
 - Web3Forms: use for consultation enquiries and preparation details.
 
@@ -57,8 +60,8 @@ Do not place bank details, Wise account details, Google Pay identifiers, passwor
 
 ## Agent next steps
 
-1. Keep Google Pay and Wise as the only documented payment routes for Calendar consultations.
-2. Confirm the owner-approved Google Pay and Wise instructions through a secure channel.
+1. Present the client-choice payment menu and confirm the selected method privately.
+2. Confirm the owner-approved Capitec, Mukuru, Wise, and other selected-method instructions through a secure channel.
 3. Create the public Advisory Session schedule as a 60-minute R900 option only after owner approval.
 4. Treat the R2,700 three-session pathway as a service description, with each session booked separately.
 5. Test the enquiry, manual payment confirmation, Google Meet, Calendar confirmation, and reminder workflow.

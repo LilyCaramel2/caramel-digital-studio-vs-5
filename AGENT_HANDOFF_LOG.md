@@ -312,3 +312,31 @@ The checklist covers preparation, Web3Forms enquiry, Google Pay instructions, Wi
 ### Next action
 
 An agent runs the checklist with owner-approved test instructions, records results privately, updates Issue #1, and requests owner approval before publication.
+
+
+## 2026-11-24 — client-choice payment menu and launch guidelines
+
+### Owner correction
+
+Payment selection belongs to the client. Country and location guide the available menu, while the client chooses the method that suits their account, currency, access, and preference.
+
+The approved menu can include South African EFT to Capitec, Mukuru where suitable, Wise payment links or requests, Wise account details, Wise email or Wisetag search, card or Google Pay through Wise where enabled, and other owner-approved methods. The official bank spelling is `Capitec`.
+
+PayPal sits outside the current launch phase. A separate owner decision and demand check can review it later.
+
+### Documentation
+
+- Added `PAYMENT_METHODS_LAUNCH_GUIDELINES_2026-11-24.md`.
+- Added `CLIENT_PAYMENT_INSTRUCTIONS_CAPITEC_MUKURU_WISE.md`.
+- Updated `GOOGLE_CALENDAR_05A_MANUAL_PAYMENT_TEMPLATES_2026-11-24.md` with client-choice routing.
+- Updated `GOOGLE_CALENDAR_05A_PAYMENT_AND_ADVISORY_DECISION_2026-11-24.md`.
+- Updated the booking-agent simulation with Capitec, Mukuru, and Wise client-choice branches.
+- Updated the Caramel and generic build skills.
+
+### Wise referral boundary
+
+Use `[OWNER_WISE_REFERRAL_LINK]` until Melissa supplies the final Wise referral URL. Never invent or publish a referral URL. Use the referral link when a client chooses to open or use Wise through an onboarding route and the owner’s approved link is available.
+
+### Research record
+
+Official Wise guidance reviewed for payment links, account details, USD receiving options, Wisetag, and Wise-supported Google Pay scenarios. Wise capabilities depend on account type, country, currency, and current product availability. The next agent must verify the owner’s account before selecting a client method or building automated confirmation.
