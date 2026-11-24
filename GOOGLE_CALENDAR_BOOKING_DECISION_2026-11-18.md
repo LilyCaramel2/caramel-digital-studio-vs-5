@@ -44,9 +44,9 @@ Each schedule receives its own title, description, availability, time zone, buff
 
 ## Payments
 
-Google’s current paid appointment flow connects Calendar to Stripe for payment at booking. The owner should confirm the preferred Workspace plan, Stripe account, currency, cancellation policy, and refund process before enabling paid appointment schedules.
+Google Calendar handles appointment availability, calendar invitations, Google Meet links, confirmations, and reminders. Paid consultations use owner-approved Google Pay or Wise manual payment instructions. The owner confirms receipt of payment before confirming the paid appointment.
 
-The free project-fit appointment uses a direct Google Calendar booking page. The paid consultation and strategy schedules use payment collection after the Stripe connection is approved.
+The free project-fit appointment uses a direct Google Calendar booking page. Paid consultation, strategy, and advisory requests follow the Google Pay or Wise confirmation process recorded in `GOOGLE_CALENDAR_05A_MANUAL_PAYMENT_TEMPLATES_2026-11-24.md`.
 
 ## Google Workspace tier decision
 
@@ -81,8 +81,9 @@ The website can use the approved `start.html#consultation-booking` route while t
 - [ ] Create the paid consultation schedule.
 - [ ] Create the paid strategy schedule.
 - [ ] Create the advisory schedule.
-- [ ] Connect Stripe for paid appointment collection.
-- [ ] Confirm South African rand support and payment settings.
+- [ ] Confirm the owner-approved Google Pay instructions through a secure channel.
+- [ ] Confirm the owner-approved Wise instructions through a secure channel.
+- [ ] Confirm South African rand amounts and manual payment instructions.
 - [ ] Add cancellation and refund wording.
 - [ ] Copy the approved booking-page URLs.
 - [ ] Add the URLs to the 05A website buttons.

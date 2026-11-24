@@ -260,3 +260,34 @@ This review changes documentation only. No public HTML, CSS, JavaScript, pricing
 ### Next action
 
 Melissa decides which consultation options to offer. After approval, create only the approved Google Calendar Appointment Schedules under `carameldigitalcontent@gmail.com`, configure the agreed availability, Meet, payment, reminders, and notifications, then add the resulting URLs to the approved 05A booking location and test the flow.
+
+
+## 2026-11-24 — Google Pay and Wise payment-route cleanup
+
+### Scope
+
+Reviewed the Google Calendar handoff, booking decision, advisory decision, manual-payment templates, and every comment on GitHub Issue #1 for obsolete payment-provider wording.
+
+### Decisions
+
+- Google Pay and Wise are the documented manual payment routes.
+- The owner checks payment receipt before confirming a paid appointment.
+- The owner sends the Google Calendar and Google Meet details after receipt confirmation.
+- Private payment identifiers remain outside the repository and GitHub Issues.
+- Option A remains the recommended public advisory structure: one 60-minute R900 session per booking.
+
+### Documentation work
+
+- Updated the Google Calendar integration handoff.
+- Updated the older Google Calendar booking decision.
+- Added `GOOGLE_CALENDAR_05A_MANUAL_PAYMENT_TEMPLATES_2026-11-24.md` with the manual process, Google Pay email, Wise email, payment-received email, pending-confirmation email, and advisory wording.
+- Removed the obsolete presentation outline because agent handovers use Markdown files and GitHub Issues.
+- Updated all four Issue #1 comments that contained the retired payment-provider wording.
+
+### Verification
+
+Repository and Issue #1 scans show zero residual matches for the retired payment-provider reference. No public website HTML, CSS, JavaScript, pricing, or booking URL changed.
+
+### Next action
+
+The owner approves the final payment wording and supplies private Google Pay or Wise instructions through a secure channel. An agent then configures only the approved Google Calendar appointment options and completes the manual confirmation test.

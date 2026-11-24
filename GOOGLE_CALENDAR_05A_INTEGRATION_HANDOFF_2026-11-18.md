@@ -74,7 +74,7 @@ The handoff proposes four appointment options under `carameldigitalcontent@gmail
 
 Use Google Meet for online sessions. Add preparation questions, availability, buffer time, time zone, maximum daily bookings, confirmation messages, reminders, and owner notifications.
 
-Stripe is permanently excluded. Use Google Pay or Wise through owner-approved manual payment instructions. The owner confirms receipt of payment, then confirms the paid appointment and sends the Calendar and Meet details. Keep private payment identifiers and account details outside the repository and GitHub Issues. See `GOOGLE_CALENDAR_05A_PAYMENT_AND_ADVISORY_DECISION_2026-11-24.md` for the advisory recommendation and draft terms.
+Use Google Pay or Wise through owner-approved manual payment instructions. The owner confirms receipt of payment, then confirms the paid appointment and sends the Calendar and Meet details. Keep private payment identifiers and account details outside the repository and GitHub Issues. See `GOOGLE_CALENDAR_05A_PAYMENT_AND_ADVISORY_DECISION_2026-11-24.md` for the advisory recommendation and draft terms.
 
 ## 05A page integration
 

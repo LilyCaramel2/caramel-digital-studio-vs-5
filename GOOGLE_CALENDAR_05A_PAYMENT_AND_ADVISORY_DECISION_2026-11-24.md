@@ -4,7 +4,7 @@
 
 **Scope:** Caramel Digital Studio static 05A consultation flow.
 
-**Decision status:** Stripe is permanently excluded from this integration.
+**Decision status:** Google Pay and Wise manual confirmation are the approved payment routes for this integration.
 
 ## Recommended advisory structure
 
@@ -48,7 +48,6 @@ The owner confirms any refund, credit, or rescheduling outcome directly with the
 
 ## Provider boundary
 
-- Stripe: permanently excluded.
 - Google Pay: use only with the owner-approved receiving account or payment instructions.
 - Wise: use only with the owner-approved receiving account or payment instructions.
 - Google Calendar: use for appointment availability, confirmations, reminders, and Google Meet links.
@@ -58,10 +57,9 @@ Do not place bank details, Wise account details, Google Pay identifiers, passwor
 
 ## Agent next steps
 
-1. Keep Stripe out of all Calendar files, public copy, code, and future handovers.
-2. Replace any remaining Stripe wording in the Google Calendar integration handoff with Google Pay/Wise manual payment wording.
-3. Confirm the owner-approved Google Pay and Wise instructions through a secure channel.
-4. Create the public Advisory Session schedule as a 60-minute R900 option only after owner approval.
-5. Treat the R2,700 three-session pathway as a service description, with each session booked separately.
-6. Test the enquiry, manual payment confirmation, Google Meet, Calendar confirmation, and reminder workflow.
-7. Record final owner-approved wording and test results in Issue #1.
+1. Keep Google Pay and Wise as the only documented payment routes for Calendar consultations.
+2. Confirm the owner-approved Google Pay and Wise instructions through a secure channel.
+3. Create the public Advisory Session schedule as a 60-minute R900 option only after owner approval.
+4. Treat the R2,700 three-session pathway as a service description, with each session booked separately.
+5. Test the enquiry, manual payment confirmation, Google Meet, Calendar confirmation, and reminder workflow.
+6. Record final owner-approved wording and test results in Issue #1.
