@@ -214,3 +214,49 @@ Review the 05A section in the live review build, approve the consultation wordin
 ## 2026-11-23 — January pricing draft and migration hold
 
 Created `JANUARY_PRICING_AND_CHRISTMAS_PROMO_GUIDELINES_DRAFT.md` and `NEXT_AGENT_TODO_AND_HANDOVER_2026-11-23.md`. The current priority is the static website, 05A consultation, Google Calendar setup, seasonal approval, pricing QA, and agent handovers. The Next.js migration and connected systems remain on hold.
+
+
+## 2026-11-24 — Issue #1 and Web3Forms status clarification
+
+### Scope
+
+Reviewed GitHub Issue #1, the Google Calendar 05A handoff, `pricing.html`, `start.html`, and `script.js` after the owner queried the proposed four appointment schedules and Web3Forms error handling.
+
+### Exact Issue #1 state
+
+- Issue: `#1`, `Agent coordination: locked pricing page and staged service additions`.
+- State: open.
+- Repository: `LilyCaramel2/caramel-digital-studio-vs-5`.
+- Branch: `main`.
+- Working tree: clean before this documentation entry.
+- Latest commit at review: `3ce9a03`, `document approved MIT license`.
+- Existing issue records 05A as a review build and records Google Calendar schedules as open owner decisions.
+
+### Google Calendar clarification
+
+The phrase “four schedules” comes from `GOOGLE_CALENDAR_05A_INTEGRATION_HANDOFF_2026-11-18.md`. It describes four proposed appointment types:
+
+1. Free project-fit conversation, 30 minutes.
+2. Digital Marketing Consultation, 60 minutes, R950.
+3. Digital Marketing Strategy Session, 90 minutes, R1,350.
+4. Advisory Session, 60 minutes at R900 per session within the R2,700 block.
+
+These are proposed options in the handoff. They are not confirmed schedules, live URLs, or completed Google Calendar configuration. Owner approval is required before creation.
+
+### Web3Forms verification
+
+- `start.html` and `pricing.html` load the shared deferred `script.js`.
+- Both forms use `data-enquiry-form`.
+- Both forms contain the configured Web3Forms access-key field without exposing the value in this log.
+- Both forms contain a `[data-form-status]` live status element and a submit button.
+- `script.js` prevents the native submit, sends `FormData` to `https://api.web3forms.com/submit`, checks both HTTP status and the Web3Forms `success` value, resets the form after success, writes status text, catches network, JSON, and API errors, and re-enables the submit button in `finally`.
+- The missing-key path gives a direct-email fallback and leaves the button available.
+- Current edge cases for a later hardening pass: missing form controls would raise a JavaScript error, non-JSON responses use the generic fallback after JSON parsing fails, and requests have no timeout or abort controller. The current HTML supplies the required controls, so the existing flow is structurally connected.
+
+### Files changed
+
+This review changes documentation only. No public HTML, CSS, JavaScript, pricing, or booking URL was changed.
+
+### Next action
+
+Melissa decides which consultation options to offer. After approval, create only the approved Google Calendar Appointment Schedules under `carameldigitalcontent@gmail.com`, configure the agreed availability, Meet, payment, reminders, and notifications, then add the resulting URLs to the approved 05A booking location and test the flow.
