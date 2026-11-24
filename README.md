@@ -24,6 +24,10 @@ Then open `http://localhost:8000`.
 
 The project form submits through Web3Forms to the email inbox associated with its access key. The form reports success only when Web3Forms accepts the submission; otherwise, it offers the direct email address as an alternative. The access key is embedded in the page because Web3Forms is designed for static client-side forms.
 
+## License
+
+This repository is licensed under the [MIT License](LICENSE). Copyright © 2026 Lily Godden.
+
 ## GitHub Pages
 
 To publish through GitHub Pages, open the repository's **Settings → Pages**, select **Deploy from a branch**, choose `main` and `/(root)`, then save. The site will be available at the GitHub Pages URL shown there.# caramel-digital-studio-vs-5
