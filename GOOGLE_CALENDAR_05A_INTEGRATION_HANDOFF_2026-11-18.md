@@ -65,7 +65,7 @@ The current repository remains the active source until the owner approves the mi
 
 ## Google Calendar setup
 
-Create four Google Calendar Appointment Schedules under `carameldigitalcontent@gmail.com`:
+The handoff proposes four appointment options under `carameldigitalcontent@gmail.com`. Create only the options approved by the owner:
 
 1. Free project-fit conversation — 30 minutes
 2. Digital Marketing Consultation — 60 minutes — R950
@@ -74,7 +74,7 @@ Create four Google Calendar Appointment Schedules under `carameldigitalcontent@g
 
 Use Google Meet for online sessions. Add preparation questions, availability, buffer time, time zone, maximum daily bookings, confirmation messages, reminders, and owner notifications.
 
-Connect Stripe through Google Calendar for the paid appointment schedules after the owner confirms the Workspace plan, Stripe account, currency, cancellation policy, and refund workflow.
+Stripe is permanently excluded. Use Google Pay or Wise through owner-approved manual payment instructions. The owner confirms receipt of payment, then confirms the paid appointment and sends the Calendar and Meet details. Keep private payment identifiers and account details outside the repository and GitHub Issues. See `GOOGLE_CALENDAR_05A_PAYMENT_AND_ADVISORY_DECISION_2026-11-24.md` for the advisory recommendation and draft terms.
 
 ## 05A page integration
 
@@ -88,12 +88,12 @@ The final integration replaces `start.html#consultation-booking` with the approv
 
 ## Next agent workflow
 
-1. Create and configure the four Google Calendar appointment schedules.
+1. Confirm which proposed appointment options the owner wants to publish, then create only those schedules.
 2. Copy each approved booking-page URL.
 3. Add the URLs to the 05A buttons.
 4. Add the calendar booking widget or booking-page link to the approved page location.
 5. Test the free appointment flow.
-6. Test the paid appointment flow through Stripe.
+6. Test the paid appointment flow using the owner-approved Google Pay or Wise manual confirmation process.
 7. Test Google Meet links, Gmail confirmations, reminders, and owner notifications.
 8. Store the final URLs and setup notes in the Silo A `00 Agent Logs` folder.
 9. Update this GitHub Issue with the final URLs, test result, and owner approval state.
