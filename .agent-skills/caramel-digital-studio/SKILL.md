@@ -49,6 +49,10 @@ For the current static build:
 - Use positive button copy such as `Book a conversation`, `Send consultation enquiry`, and `Start your next step`.
 - Keep Google Calendar booking URLs as a later provider connection after the owner creates the appointment schedules.
 - Keep the free project-fit conversation and paid consultation options clearly separated in the copy.
+- Use Google Pay or Wise manual payment confirmation for paid consultations. The owner checks receipt, then confirms the Calendar and Google Meet appointment.
+- Use Option A for the public advisory schedule: one 60-minute R900 session per booking. Treat the R2,700 three-session pathway as three separately confirmed sessions.
+- Read `GOOGLE_CALENDAR_05A_MANUAL_PAYMENT_TEMPLATES_2026-11-24.md` and `GOOGLE_CALENDAR_05A_BOOKING_FLOW_TEST_CHECKLIST_2026-11-24.md` before configuring or testing the booking flow.
+- Keep payment identifiers, account details, QR codes, access keys, and private links outside the repository and GitHub Issues.
 - Reuse the current access key during the approved integration pass. Keep the key out of handover drafts and skill examples.
 - Treat `PRICING_05A_WEB3FORMS_CONSULTATION_COMPONENT.html` as a review component. Replace its placeholder key with the existing project value only in the working site source after owner review.
 - Use the existing pricing section classes and visual tokens rather than introducing a separate form language.
@@ -85,7 +89,7 @@ Use `AGENT_HANDOFF_TEMPLATE.md` for each meaningful task. Record the repository,
 
 Start the handover at the beginning of the task. Add the baseline repository state and intended scope first, then update the same handover as work progresses. Finish with the exact next action so another agent can continue after a context limit or token interruption.
 
-Use Markdown handovers, code drafts, checklists, and GitHub Issue updates for this solo-developer workflow. Prepare a presentation outline only as an internal planning note when useful. Produce a deck after Melissa explicitly requests one.
+Use Markdown handovers, code drafts, checklists, and GitHub Issue updates for this solo-developer workflow. Keep agent coordination in Markdown and GitHub Issues.
 
 ## Quality gate
 

@@ -291,3 +291,24 @@ Repository and Issue #1 scans show zero residual matches for the retired payment
 ### Next action
 
 The owner approves the final payment wording and supplies private Google Pay or Wise instructions through a secure channel. An agent then configures only the approved Google Calendar appointment options and completes the manual confirmation test.
+
+
+## 2026-11-24 — manual booking-flow test checklist and skill update
+
+### Scope
+
+Added a repeatable agent checklist for the complete consultation journey using Web3Forms, Google Pay or Wise manual confirmation, Google Calendar, Gmail, and Google Meet.
+
+### Files added or updated
+
+- Added `GOOGLE_CALENDAR_05A_BOOKING_FLOW_TEST_CHECKLIST_2026-11-24.md`.
+- Updated `.agent-skills/caramel-digital-studio/SKILL.md` with the approved manual payment route, Option A advisory structure, private-data boundary, and checklist references.
+- Updated `.agent-skills/agentic-studio-build/SKILL.md` with a provider-neutral manual payment and booking-flow test pattern.
+
+### Validation scope
+
+The checklist covers preparation, Web3Forms enquiry, Google Pay instructions, Wise instructions, payment receipt, Calendar and Meet confirmation, advisory sessions, changes, cancellations, failure states, evidence, and Issue #1 handover.
+
+### Next action
+
+An agent runs the checklist with owner-approved test instructions, records results privately, updates Issue #1, and requests owner approval before publication.

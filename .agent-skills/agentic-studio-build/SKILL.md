@@ -40,6 +40,8 @@ For each integration, record the provider, account owner, purpose, data fields, 
 
 For a static Web3Forms integration, inspect the existing form marker, hidden access-key field, JavaScript submission handler, status element, success state, error state, and direct-contact fallback before adding a second form. Reuse the established field names and provider route. Keep any active browser-side provider key confined to the approved project source and keep review drafts on placeholders.
 
+For a manual payment route, document the payment method, owner receipt check, confirmation sequence, private-data boundary, client email templates, and full booking-flow test. Test enquiry, payment instruction, payment confirmation, calendar invitation, meeting link, reminder, rescheduling, and cancellation as separate states.
+
 ## Language and audience
 
 Choose the audience and language variant before writing. Use UK English for UK and South African audiences. Use US English for US audiences. Use plain, specific, affirmative sentences.
@@ -67,7 +69,7 @@ Use a Markdown handover containing:
 
 Create the handover at task start with the baseline state and intended scope. Keep adding findings, decisions, changed files, checks, and open items during the task. Finish with one clear continuation action so a later agent can resume after a context limit, token interruption, or handoff.
 
-Use GitHub Issues as the coordination board. Write one concise issue update per meaningful batch. Keep presentation outlines as optional planning notes. Create a deck only when the owner requests one.
+Use GitHub Issues as the coordination board. Write one concise issue update per meaningful batch. Use Markdown handovers and checklists for agent coordination.
 
 ## Delivery gate
 
