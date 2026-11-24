@@ -44,6 +44,8 @@ For a manual payment route, document the payment method, owner receipt check, co
 
 Let the client choose from the owner-approved payment menu. Record country, preferred method, selected route, amount, receipt reference, and confirmation state. Keep optional referral links as owner-supplied placeholders until the owner provides the final URL. Keep launch-phase payment decisions separate from future provider discovery.
 
+When a repository has an operations guide and named payment handovers, read the operations guide first and follow its file map. Preserve the distinction between client-facing instructions, private templates, simulations, test checklists, and future automation tasks.
+
 ## Language and audience
 
 Choose the audience and language variant before writing. Use UK English for UK and South African audiences. Use US English for US audiences. Use plain, specific, affirmative sentences.

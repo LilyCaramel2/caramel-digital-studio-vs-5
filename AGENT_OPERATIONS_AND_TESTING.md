@@ -12,6 +12,8 @@ Repository Markdown files are the durable handovers for future agents. Use clear
 
 The agent handoff log is `AGENT_HANDOFF_LOG.md`. The reusable handoff structure is `AGENT_HANDOFF_TEMPLATE.md`. The deterministic checker is `scripts/check_caramel_repo.py`. The automated workflow is `.github/workflows/caramel-static-checks.yml`.
 
+Payment documentation is split by purpose. Read `PAYMENT_METHODS_LAUNCH_GUIDELINES_2026-11-24.md` for the approved launch menu, `CLIENT_PAYMENT_INSTRUCTIONS_CAPITEC_MUKURU_WISE.md` for client-facing instructions, `GOOGLE_CALENDAR_05A_MANUAL_PAYMENT_TEMPLATES_2026-11-24.md` for private confirmation templates, `GOOGLE_CALENDAR_05A_BOOKING_FLOW_TEST_CHECKLIST_2026-11-24.md` for test steps, and `GOOGLE_CALENDAR_05A_BOOKING_AGENT_SIMULATION_2026-11-24.md` for generated-output examples. Read `WISE_AUTOMATED_PAYMENT_CONFIRMATION_NEXT_AGENT_TASK_2026-11-24.md` before planning Wise automation.
+
 ## Start of every agent batch
 
 Read `AGENT_HANDOFF_LOG.md`, the relevant task handoff, and the latest Issue #1 comments. Run:
@@ -52,4 +54,6 @@ If a task ends early, record the partial result, current commit, changed files, 
 
 ## Payment safety boundary
 
-The client chooses a payment method from the owner-approved menu. The menu can include Capitec EFT, Mukuru where suitable, Wise methods, and other approved routes. Keep payment details, receiving identifiers, referral URLs, access keys, and private records outside public source and Issue #1. Use placeholders until the owner supplies private values.
+The client chooses a payment method from the owner-approved menu. The menu can include Capitec EFT, Mukuru where suitable, Wise methods, and other approved routes. Ask for country and preferred method, then send only the selected method’s private instructions. Keep PayPal outside the current launch phase.
+
+Use the official bank spelling `Capitec`. Wise options can include payment links, requests, account details, approved email or Wisetag search, QR, card, or Google Pay where enabled in the owner’s account. Use `[OWNER_WISE_REFERRAL_LINK]` until Melissa supplies the final referral URL. Keep payment details, receiving identifiers, referral URLs, access keys, and private records outside public source and Issue #1.

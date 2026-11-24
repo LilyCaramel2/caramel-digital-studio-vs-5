@@ -56,6 +56,7 @@ For the current static build:
 - Keep PayPal outside the current launch phase. Add it only after a separate owner-approved demand and account decision.
 - When a client chooses to open or use Wise through an onboarding route, use the owner-supplied Wise referral URL. Keep `[OWNER_WISE_REFERRAL_LINK]` as a placeholder until Melissa supplies the final link. Never invent a referral URL.
 - Read `GOOGLE_CALENDAR_05A_MANUAL_PAYMENT_TEMPLATES_2026-11-24.md` and `GOOGLE_CALENDAR_05A_BOOKING_FLOW_TEST_CHECKLIST_2026-11-24.md` before configuring or testing the booking flow.
+- Read `AGENT_OPERATIONS_AND_TESTING.md`, `PAYMENT_METHODS_LAUNCH_GUIDELINES_2026-11-24.md`, `CLIENT_PAYMENT_INSTRUCTIONS_CAPITEC_MUKURU_WISE.md`, and `GOOGLE_CALENDAR_05A_BOOKING_AGENT_SIMULATION_2026-11-24.md` before incoming-agent booking work. Read `WISE_AUTOMATED_PAYMENT_CONFIRMATION_NEXT_AGENT_TASK_2026-11-24.md` before Wise automation planning.
 - Keep payment identifiers, account details, QR codes, access keys, and private links outside the repository and GitHub Issues.
 - Reuse the current access key during the approved integration pass. Keep the key out of handover drafts and skill examples.
 - Treat `PRICING_05A_WEB3FORMS_CONSULTATION_COMPONENT.html` as a review component. Replace its placeholder key with the existing project value only in the working site source after owner review.

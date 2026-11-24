@@ -360,3 +360,28 @@ The checker uses only Python’s standard library and local Git commands. It ins
 ### Next action
 
 Run the checker after commit and push. Review the first GitHub Actions result. Continue with owner-controlled payment and Calendar testing only after the repository checks pass.
+
+
+## 2026-11-24 — incoming-agent payment documentation review
+
+### Scope
+
+Reviewed `AGENT_OPERATIONS_AND_TESTING.md`, the launch guidelines, client instructions, manual templates, booking-flow checklist, booking-agent simulation, Wise automation task, repository-managed skills, and the latest Issue #1 status comments.
+
+### Confirmed coverage
+
+Incoming agents now have a direct file map for Capitec EFT, Mukuru, Wise payment links and requests, Wise account details, approved email or Wisetag search, QR, card, Google Pay where enabled, Wise referral handling, client-choice flow, manual confirmation, simulations, and future automation discovery.
+
+The official bank spelling is `Capitec`. The Wise referral placeholder is `[OWNER_WISE_REFERRAL_LINK]`. PayPal remains outside the current launch phase. Private receiving details remain outside source control and Issue #1.
+
+### Verification
+
+The offline checker passed manually at commit `95663d9`. It found zero retired-provider matches, zero missing required agent files, a clean working tree, and local `HEAD` aligned with `origin/main`. The latest Issue #1 comments include the automated workflow status and tested results.
+
+### Files changed
+
+Updated `AGENT_OPERATIONS_AND_TESTING.md`, `.agent-skills/caramel-digital-studio/SKILL.md`, and `.agent-skills/agentic-studio-build/SKILL.md`. No public website source or payment configuration changed.
+
+### Next action
+
+Commit and push this documentation-only update, rerun the checker, validate both repository-managed skills, and add the final status to Issue #1.
