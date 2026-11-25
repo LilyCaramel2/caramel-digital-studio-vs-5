@@ -29,6 +29,8 @@ Conserve tokens and compute. Read existing Markdown, handovers, skills, and loca
 
 Use Google Workspace as the default low-cost coordination and file layer where the client already has Gmail and free Workspace access. Use Gemini or Gemma where the approved account and task support them. Keep durable PDFs, media, research, and handovers in the owner-approved C-drive silo or its approved Google-backed file store. Linear, Render, Supabase, GitHub Issues, and similar systems may point to those files through controlled references; they do not become the sole source of truth. Record file ownership, access scope, link stability, privacy, and retention for every reference.
 
+For model routing and Render call paths, read `MODEL_ROUTING_AND_RENDER_INTEGRATION_HANDOVER.md`. Keep local models, Google Workspace permissions, public web-service ingress, Render webhooks, private services, workers, payment actions, and decision layers in separate control boundaries.
+
 Use Markdown, YAML, JSON, and source files as the durable working record. Use presentations only when Melissa explicitly requests a client pitch or presentation. Agent summaries, plans, checklists, architecture notes, and handovers stay in Markdown.
 
 ## Direct writing

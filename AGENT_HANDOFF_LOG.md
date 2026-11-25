@@ -471,3 +471,19 @@ Linear, Render, Supabase, GitHub Issues, and similar systems may reference those
 ### Validation note
 
 The previous validation stopped because the em-dash scan included older historical handoff entries. New-line scanning is now scoped to the changed additions, while historical records remain preserved.
+
+## 2026-11-25 — model routing and Render call paths
+
+### Research result
+
+Created `MODEL_ROUTING_AND_RENDER_INTEGRATION_HANDOVER.md` after reviewing official Gemma, Google Workspace, Qwen Code, GLM, OpenManus, and Render documentation.
+
+Recommended roles: Gemma for local Google-adjacent document and Workspace preparation; Gemini for approved Workspace actions; Qwen Code for local repository and coding work; GLM for tested local or approved hosted coding and tool use; OpenManus for isolated local orchestration experiments.
+
+Gemma or Gemini may prepare payment explanations or classify receipts. Payment authorisation, account access, receipt verification, and client confirmation remain owner-controlled through the approved payment workflow.
+
+Render web services receive inbound HTTPS on a public URL when bound to `0.0.0.0` and `PORT`. Render webhooks require a Pro-or-higher workspace. A free-tier design can use a secured web-service endpoint that validates input and queues work for a worker when required.
+
+### Next action
+
+Keep the model and Render architecture separate from the current static site. Test one local model route and one secured Render endpoint in a future approved batch.

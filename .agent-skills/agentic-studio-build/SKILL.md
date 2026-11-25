@@ -29,6 +29,8 @@ Prefer local open-source models and deterministic tools. Use free tiers where th
 
 Use Google Workspace as the default low-cost coordination and file layer when client Gmail or free Workspace access is available. Use Gemini or Gemma where approved. Keep PDFs, media, research, and handovers in the owner-approved C-drive silo or approved Google-backed storage. Let Linear, Render, Supabase, GitHub Issues, and similar systems reference those files through controlled links. Record ownership, access, privacy, retention, and link status.
 
+When model routing or Render work is proposed, read `MODEL_ROUTING_AND_RENDER_INTEGRATION_HANDOVER.md`. Separate local model execution, Google Workspace permissions, public web-service ingress, webhook products, private services, and background workers. Keep credentials and payment authorisation in their approved control boundaries.
+
 At migration time, verify the latest stable Next.js release and official Vercel guidance. Select the supported release that fits the project; keep the framework version as a dated decision rather than treating an older minor version as permanent.
 
 ## Stage the work

@@ -23,6 +23,8 @@ When the owner places the migration phase on hold, prioritise the static website
 
 Keep Next.js, HubSpot, Supabase, Render, Linear, and advanced application architecture in future-phase handovers. Prepare migration notes and component plans separately. Keep the current static build clean and coherent.
 
+Read `MODEL_ROUTING_AND_RENDER_INTEGRATION_HANDOVER.md` before planning local models, Google Workspace automation, Render endpoints, webhook receivers, workers, or future decision layers. Keep model routing and hosted services outside the static source until the connected-systems phase is approved.
+
 ## Before editing
 
 1. Read `AGENT_HANDOFF_LOG.md`.
