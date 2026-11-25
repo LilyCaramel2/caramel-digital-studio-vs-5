@@ -19,7 +19,17 @@ Caramel Digital Studio is a solo developer studio supported by agents.
 
 ## Build sequence
 
-Every site starts as a static HTML, CSS, Tailwind, and JavaScript build. Review and approve the static site first. Move the approved site to Next.js later as a separate connected-systems phase. Keep CRM, database, hosting, project operations, chatbot, and decision-layer work in future handovers until the owner approves that phase.
+Every site starts as a static HTML, CSS, Tailwind, and JavaScript build. Review and approve the static site first. Move the approved site to Next.js later as a separate connected-systems phase. Keep CRM, database, hosting, project operations, chatbot, and decision-layer work in future handovers until the owner approves that phase. At migration time, check the current official Vercel and Next.js release, then select the latest stable version supported by the project. Current repository guidance tracks Next.js 16.x and avoids hard-coding an older minor release.
+
+## Local-first and resource-aware operation
+
+Prefer open-source local models and local deterministic tools for Lotus, Gaia, and reusable agency workflows. Treat paid APIs as optional owner-approved services. Use free tiers where they meet the task, keep each repository’s services and accounts separated as required, and preserve the owner’s control of source, prompts, research, client data, and intellectual property.
+
+Conserve tokens and compute. Read existing Markdown, handovers, skills, and local files before asking for repeated context. Use bounded batches, concise handovers, deterministic scripts, cached local research, and file-based transfer between agents. Choose the smallest capable model or tool. Record when a remote service is required and why a local or free route cannot complete the task.
+
+Use Google Workspace as the default low-cost coordination and file layer where the client already has Gmail and free Workspace access. Use Gemini or Gemma where the approved account and task support them. Keep durable PDFs, media, research, and handovers in the owner-approved C-drive silo or its approved Google-backed file store. Linear, Render, Supabase, GitHub Issues, and similar systems may point to those files through controlled references; they do not become the sole source of truth. Record file ownership, access scope, link stability, privacy, and retention for every reference.
+
+Use Markdown, YAML, JSON, and source files as the durable working record. Use presentations only when Melissa explicitly requests a client pitch or presentation. Agent summaries, plans, checklists, architecture notes, and handovers stay in Markdown.
 
 ## Direct writing
 

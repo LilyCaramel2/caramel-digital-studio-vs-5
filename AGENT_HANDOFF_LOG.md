@@ -425,3 +425,49 @@ The standard adds source-grounded claims, freshness checks, translation controls
 ### Checks
 
 Run both skill validators, `git diff --check`, a long-em-dash scan, and the offline repository checker before delivery. Add the final commit and Issue #1 reference here.
+
+## 2026-11-25 — local-first agency operating system review
+
+### Scope
+
+Reviewed `caramel-agency-operating-system-handover-v1.0.1.zip`, including its agency specification, handover, website-intelligence skill, skill-architect package, context templates, and Chronodesk research reference.
+
+### Decisions
+
+The reusable model is layered: agency core, specialist skills, industry packs, client/project context, and platform adapters. Caramel adds a local-first and free-first policy: prefer open-source local models and deterministic tools, use free tiers where suitable, require owner approval for paid APIs, protect source and intellectual property, and conserve tokens through bounded batches, local references, cached research, Markdown handovers, and file-based transfer.
+
+Markdown, YAML, JSON, and source files remain the durable record. Presentation slides belong to explicitly requested client pitches or presentations.
+
+Next.js 16.3 is released. Official Vercel documentation checked on 2026-11-25 identifies 16.4 as the current stable 16.x line. Future migration work must verify the latest stable release at approval time rather than permanently locking an older minor version.
+
+JEV, CLEF, and other decision models remain future application architecture. Define purpose, inputs, outputs, confidence, evidence, review, escalation, privacy, and audit records before implementation.
+
+### Changed files
+
+- `AGENT_LANGUAGE_PROTOCOL.md`
+- `.agent-skills/caramel-digital-studio/SKILL.md`
+- `.agent-skills/agentic-studio-build/SKILL.md`
+- `CARAMEL_AGENCY_OPERATING_SYSTEM_LOCAL_FIRST_HANDOVER.md`
+- `AGENT_HANDOFF_LOG.md`
+
+### Sources
+
+- https://nextjs.org/blog/next-16-3
+- https://nextjs.org/blog/next-16-4
+- https://nextjs.org/docs/app/guides/upgrading/version-16
+
+### Next action
+
+Review whether to import or adapt the uploaded Website Intelligence and Agency Skill Architect packages in a separate bounded batch. Keep the current static site unchanged until that review is approved.
+
+## 2026-11-25 — Google-first file and coordination layer
+
+### Decision
+
+Use Google Workspace as the default low-cost coordination and file layer where a client has Gmail or free Workspace access. Use Gemini or Gemma where the approved account and task support them. Keep PDFs, media, research, and handovers in the owner-approved C-drive silo or approved Google-backed storage.
+
+Linear, Render, Supabase, GitHub Issues, and similar systems may reference those files through controlled links. The approved file store remains the durable source. Record ownership, access scope, privacy, retention, and link status for each reference.
+
+### Validation note
+
+The previous validation stopped because the em-dash scan included older historical handoff entries. New-line scanning is now scoped to the changed additions, while historical records remain preserved.

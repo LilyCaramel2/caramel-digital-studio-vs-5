@@ -15,6 +15,10 @@ Treat `LilyCaramel2/caramel-digital-studio-vs-5` as a static HTML, CSS, Tailwind
 
 Every Caramel site follows the same sequence: static HTML, CSS, Tailwind, and JavaScript first; review and owner approval next; a separate Next.js migration later. Keep Next.js, HubSpot, Supabase, Render, Linear, and chatbot systems out of the current static source until the later phase is approved.
 
+Prefer local open-source models and deterministic local tools. Use free-tier hosted services where they meet the task. Request paid APIs only with explicit owner approval and a documented reason. Keep source, prompts, client records, and intellectual property in owner-controlled files and approved repositories. Conserve tokens through short batches, Markdown handovers, local references, and file-based agent transfer.
+
+Use Google Workspace as the default low-cost coordination and file layer when the client has Gmail or free Workspace access. Use Gemini or Gemma where the approved account and task support them. Keep PDFs, media, research, and handovers in the owner-approved C-drive silo or approved Google-backed storage. Let Linear, Render, Supabase, GitHub Issues, and other systems reference those files through controlled links while the file store remains the durable source. Record access scope, privacy, retention, and link status.
+
 When the owner places the migration phase on hold, prioritise the static website, pricing, consultation, booking, content, QA, and handover work. Keep migration notes available without implementing them.
 
 Keep Next.js, HubSpot, Supabase, Render, Linear, and advanced application architecture in future-phase handovers. Prepare migration notes and component plans separately. Keep the current static build clean and coherent.
@@ -72,7 +76,7 @@ HTML, CSS, Tailwind CDN, JavaScript, Web3Forms, Cloudflare, and Vercel.
 
 Next.js components, HubSpot CRM, Supabase data, Render services, Linear delivery operations, and connected Google Workspace workflows.
 
-Move to the next layer through an approved review build. Keep the static source as the visual reference.
+Move to the next layer through an approved review build. At migration time, verify the latest stable Next.js version in official Vercel documentation and choose the current supported release rather than assuming a fixed minor version. Keep the static source as the visual reference.
 
 ## Google Workspace layer
 

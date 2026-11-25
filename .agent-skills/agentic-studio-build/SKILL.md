@@ -25,6 +25,12 @@ When a migration is on hold, keep the current layer healthy and deliver approved
 
 Avoid mixing framework files into a static site. Keep provider integrations proportionate to the current layer. Use placeholders for owner-supplied URLs, keys, account IDs, and schedules.
 
+Prefer local open-source models and deterministic tools. Use free tiers where they meet the task. Require explicit owner approval before paid APIs or unnecessary hosted processing. Protect source, prompts, client records, and intellectual property. Conserve tokens with bounded batches, concise Markdown handovers, local references, cached research, and file-based transfer.
+
+Use Google Workspace as the default low-cost coordination and file layer when client Gmail or free Workspace access is available. Use Gemini or Gemma where approved. Keep PDFs, media, research, and handovers in the owner-approved C-drive silo or approved Google-backed storage. Let Linear, Render, Supabase, GitHub Issues, and similar systems reference those files through controlled links. Record ownership, access, privacy, retention, and link status.
+
+At migration time, verify the latest stable Next.js release and official Vercel guidance. Select the supported release that fits the project; keep the framework version as a dated decision rather than treating an older minor version as permanent.
+
 ## Stage the work
 
 1. **Baseline:** inspect and record the current source, live behaviour, visual system, content, and risks.
@@ -73,7 +79,7 @@ Use a Markdown handover containing:
 
 Create the handover at task start with the baseline state and intended scope. Keep adding findings, decisions, changed files, checks, and open items during the task. Finish with one clear continuation action so a later agent can resume after a context limit, token interruption, or handoff.
 
-Use GitHub Issues as the coordination board. Write one concise issue update per meaningful batch. Use Markdown handovers and checklists for agent coordination.
+Use GitHub Issues as the coordination board. Write one concise issue update per meaningful batch. Use Markdown handovers and checklists for agent coordination. Use presentation slides only when the owner explicitly requests a client pitch or presentation.
 
 ## Delivery gate
 
