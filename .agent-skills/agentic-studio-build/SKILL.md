@@ -31,6 +31,8 @@ Use Google Workspace as the default low-cost coordination and file layer when cl
 
 When model routing or Render work is proposed, read `MODEL_ROUTING_AND_RENDER_INTEGRATION_HANDOVER.md`. Separate local model execution, Google Workspace permissions, public web-service ingress, webhook products, private services, and background workers. Keep credentials and payment authorisation in their approved control boundaries.
 
+When `CARAMEL_OPERATING_SYSTEM_MODEL_ROUTING_SUMMARY_2026-11-25.md` exists, use its verified, pending, and future labels. Require runtime configuration, endpoint configuration, security controls, and test evidence before calling a route ready.
+
 At migration time, verify the latest stable Next.js release and official Vercel guidance. Select the supported release that fits the project; keep the framework version as a dated decision rather than treating an older minor version as permanent.
 
 ## Stage the work

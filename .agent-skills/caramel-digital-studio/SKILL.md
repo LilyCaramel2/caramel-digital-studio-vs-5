@@ -25,6 +25,8 @@ Keep Next.js, HubSpot, Supabase, Render, Linear, and advanced application archit
 
 Read `MODEL_ROUTING_AND_RENDER_INTEGRATION_HANDOVER.md` before planning local models, Google Workspace automation, Render endpoints, webhook receivers, workers, or future decision layers. Keep model routing and hosted services outside the static source until the connected-systems phase is approved.
 
+Read `CARAMEL_OPERATING_SYSTEM_MODEL_ROUTING_SUMMARY_2026-11-25.md` for the current verification state. Never describe a local model route or Render endpoint as configured until a runtime, endpoint, authentication, privacy controls, and test evidence exist.
+
 ## Before editing
 
 1. Read `AGENT_HANDOFF_LOG.md`.

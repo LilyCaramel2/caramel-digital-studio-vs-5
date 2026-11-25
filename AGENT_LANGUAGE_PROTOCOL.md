@@ -31,6 +31,8 @@ Use Google Workspace as the default low-cost coordination and file layer where t
 
 For model routing and Render call paths, read `MODEL_ROUTING_AND_RENDER_INTEGRATION_HANDOVER.md`. Keep local models, Google Workspace permissions, public web-service ingress, Render webhooks, private services, workers, payment actions, and decision layers in separate control boundaries.
 
+Read `CARAMEL_OPERATING_SYSTEM_MODEL_ROUTING_SUMMARY_2026-11-25.md` for the current verified and pending configuration state, content-production process, and next-agent build batches.
+
 Use Markdown, YAML, JSON, and source files as the durable working record. Use presentations only when Melissa explicitly requests a client pitch or presentation. Agent summaries, plans, checklists, architecture notes, and handovers stay in Markdown.
 
 ## Direct writing

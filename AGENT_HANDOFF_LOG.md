@@ -487,3 +487,21 @@ Render web services receive inbound HTTPS on a public URL when bound to `0.0.0.0
 ### Next action
 
 Keep the model and Render architecture separate from the current static site. Test one local model route and one secured Render endpoint in a future approved batch.
+
+## 2026-11-25 — comprehensive operating-system and model-routing summary
+
+### Verification
+
+Created `CARAMEL_OPERATING_SYSTEM_MODEL_ROUTING_SUMMARY_2026-11-25.md`. Repository inspection found no local-model runtime, model download, Ollama or vLLM service, Render service definition, `render.yaml`, Dockerfile, webhook receiver, endpoint URL, or environment configuration. The local route and secured Render endpoint are therefore documented and pending, with no claim of end-to-end verification.
+
+### Summary scope
+
+The summary covers solo-developer ownership, local and free-first resources, Google Workspace and Gemma/Gemini, Qwen, GLM, OpenManus, Render ingress, endpoint security, payment boundaries, file privacy, blog research and writing, image and video production, future hosted tools, and the next-agent build batches.
+
+### Skill update
+
+The Caramel and generic build skills now require agents to distinguish verified, pending, and future routes. Agents need runtime configuration, endpoint configuration, security controls, and test evidence before calling a model route or Render endpoint ready.
+
+### Next action
+
+Shortlist and test one small Gemma model and one small Qwen model in a separate approved local batch. Keep the static site unchanged. Design a secured Render endpoint separately before deployment.
