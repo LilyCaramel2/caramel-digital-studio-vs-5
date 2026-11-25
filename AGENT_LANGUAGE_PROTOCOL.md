@@ -1,50 +1,44 @@
 # Agent language and handover protocol
 
-Version: Living document
-Scope: every Caramel Digital Studio build, client build, agent response, content task, invoice, proposal, invoice pack, chatbot, application, and handover.
+**Version:** Living document
+**Scope:** Caramel Digital Studio builds, client work, agent responses, content, invoices, proposals, forms, chatbots, translations, applications, and handovers.
 
-## Non-negotiable build sequence
+## Source of truth
 
-Every site starts as a static HTML, CSS, Tailwind, and JavaScript build. Review and approve the static site first. Move the approved site to Next.js later as a separate connected-systems phase. Keep Next.js files, CRM work, databases, hosting services, project operations, and chatbots out of the current static build until the owner approves that phase.
+Read `CARAMEL_WRITING_AUDIT_AGENTIC.md` before writing Caramel copy or agent-facing client communication. This protocol provides the short operating rules. The audit provides the full review method.
 
-## Core rule
+## Ownership and voice
 
-Describe what exists: the service, scope, structure, capability, behaviour, opportunity, constraint, price, route, owner decision, or next action. Keep attention on present facts and approved details.
+Caramel Digital Studio is a solo developer studio supported by agents.
 
-Use short sentences, common words, concrete nouns, direct verbs, and calm professional language. Use active, impersonal phrasing where it improves clarity. Apply UK English for UK and South African audiences. Apply US English for US audiences. Choose the audience before writing.
+- Use **I** for Melissa’s work, judgement, availability, delivery, and decisions.
+- Use **Caramel Digital Studio** for the studio, services, website, and systems.
+- Use **agent**, **developer**, **orchestrator**, **owner**, **client**, or **person** for roles.
+- Use **we** only for a named collaboration or an approved quotation.
+- Keep authorship, judgement, ethics, approval, and responsibility with the owner.
 
-Use commas, full stops, colons, and semicolons. Avoid long em dashes. Keep claims evidence-led. Mark assumptions, placeholders, dependencies, and open decisions clearly.
+## Build sequence
 
-## Negative-comparison rule
+Every site starts as a static HTML, CSS, Tailwind, and JavaScript build. Review and approve the static site first. Move the approved site to Next.js later as a separate connected-systems phase. Keep CRM, database, hosting, project operations, chatbot, and decision-layer work in future handovers until the owner approves that phase.
 
-Negative comparison is forbidden in public copy and agent-facing client communication. State the service or system directly. State a material constraint once as a concrete rule, then return to the present system.
+## Direct writing
 
-Avoid contrast against imagined competitors, fear-based framing, exclusion-led explanations, and phrases such as `better than`, `unlike`, `the old way`, and `your competitors`.
+Name the present service, scope, structure, capability, behaviour, opportunity, constraint, price, route, decision, or next action. Use short sentences, common words, concrete nouns, direct verbs, and calm professional language. Give each paragraph one job.
 
-The three-letter negative term formed by `n`, `o`, and `t` stays outside new studio copy wherever the sentence can be written directly. Existing source copy may be recorded as a legacy finding during an audit. New copy must describe the positive subject.
+Use UK English for UK and South African audiences. Use US English for US audiences. Record the audience and language variant before drafting. Use commas, full stops, colons, and semicolons. Use an em dash zero times in new copy, handovers, client messages, and agent outputs.
 
-## AI and role language
+## Positive language and evidence
 
-Describe AI as a tool that extends capability. Use role terms such as agent, developer, orchestrator, owner, user, client, or person. Use `human` only when a precise role, review, judgement, freedom, ethics, or wellbeing reference requires it.
+Write the approved offer directly. Keep competitor framing, fear framing, exclusion-led copy, inflated claims, invented evidence, stock AI language, repeated filler, and artificial urgency out of new writing. State material constraints once as clear rules, then return to the useful path.
 
-Avoid generic AI language, inflated claims, vague hype, corporate jargon, invented evidence, forced contrast, slogan fragments, recap endings, and dramatic technology language. Prefer the named page, service, file, price, process, provider, or action.
+Rewrite sentences to avoid `not`, `real`, `actual`, and `human` wherever a precise alternative exists. Record a justified exception for a quotation, technical term, role reference, review reference, or ethical discussion. Ground claims in approved sources, verified results, named files, owner decisions, or observed behaviour.
 
-## Word and phrase filter
+## Translation
 
-Avoid or use sparingly when a precise alternative exists:
+Translate from approved source copy. Record language, regional variant, source version, reviewer, and approval state. Keep names, prices, URLs, placeholders, provider names, and technical identifiers stable. Use focused language coverage supported by audience evidence and qualified review. Route Afrikaans, isiXhosa, isiZulu, and later African-language work through the approved language reviewer or African-language model, followed by owner review.
 
-`aligns`, `all things considered`, `aims to explore`, `as a consequence`, `as a matter of fact`, `as previously mentioned`, `as such`, `as a result`, `at the end of the day`, `at this point in time`, `augmenting human potential`, `be that as it may`, `bridging the gap`, `by the same token`, `comprehensive`, `comprehensive approach`, `consequently`, `crucial role`, `cutting-edge`, `delve`, `disruptive`, `driving impactful results`, `driving innovation`, `dynamic`, `dynamic shift`, `empower`, `end-to-end solution`, `enhanced capabilities`, `future-proof`, `furthermore`, `game-changer`, `groundbreaking`, `harness`, `holistic`, `however`, `impacting`, `in accordance with`, `in addition to`, `in anticipation of`, `in essence`, `in light of`, `in line with`, `in order to`, `in relation to`, `in summary`, `in terms of`, `in the context of`, `innovative solution`, `iterative process`, `it goes without saying`, `key differentiator`, `last but not least`, `leading the charge`, `leverage` as a verb, `let’s explore`, `master`, `mastery`, `maximizing potential`, `moreover`, `multifaceted`, `needless to say`, `next-gen`, `notable`, `on the other hand`, `optimize`, `paradigm shift`, `pertaining to`, `pioneering`, `pivotal`, `pushing the boundaries`, `quinoa` outside food, `redefining`, `revolutionize`, `robust`, `scalable`, `seamless integration`, `showcasing`, `state-of-the-art`, `streamline`, `sustainable`, `surpassing`, `synergy`, `tapestry` outside textiles, `testament`, `therefore`, `thought leader`, `to illustrate`, `to put it simply`, `to sum up`, `transformational journey`, `transformative`, `thus`, `unparalleled`, `unprecedented`, `unlocking potential`, `visionary approach`, `with regard to`, `with respect to`, `with that being said`, and `with this in mind`.
+## Review and handover
 
-Also avoid stock openings and closers such as `dive into the details`, `it is important to note`, `in conclusion`, `as we have seen`, `it is crucial to understand`, `in the fast-paced world`, `a wide range of`, `this highlights the need`, `the findings suggest`, `to better understand`, `this underscores the importance`, `in other words`, `it is worth mentioning`, `given the context`, `navigating the complexities`, `an important consideration`, `the benefits of`, `this leads to`, and repeated `on the other hand` framing.
+Apply the five passes in `CARAMEL_WRITING_AUDIT_AGENTIC.md`: purpose, meaning, voice, language, and delivery. Review headings, links, calls to action, accessibility, terminology, grammar, repeated phrases, and long em dashes.
 
-This is a review filter, not a ban on precise technical terms. Use a listed word when the named technical meaning is required, then keep the surrounding sentence direct.
-
-## Handover rule
-
-Start a Markdown handover at the beginning of every task. Record the baseline repository state, branch, intended scope, audience, language variant, and owner decision state. Add findings, files, decisions, checks, open items, deployment state, commit, issue, and next action as work progresses.
-
-Every agent leaves a complete handover before ending a task, including review builds, partial batches, interrupted work, and token-limited sessions. Use GitHub Issues as the coordination board where a repository exists. Keep presentation outlines as planning notes. Create a deck only when the owner requests one.
-
-## Quality gate
-
-Before delivery, review the copy against this protocol, check named claims and prices, preserve locked visual and architecture decisions, protect credentials, run the relevant source and responsive checks, and state the exact next action for the next agent.
+Start a Markdown handover at task start. Record baseline state, branch, scope, audience, language, owner decision state, files, checks, open items, deployment state, issue, commit, and exact next action. Use GitHub Issues as the coordination board. Leave a complete handover after every batch, including partial and token-limited work.

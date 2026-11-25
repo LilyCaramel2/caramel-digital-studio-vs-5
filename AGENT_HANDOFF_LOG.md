@@ -401,3 +401,27 @@ Reviewed the payment document map and launch boundary. `Capitec` spelling, Mukur
 5. **Close the batch:** run both skill validators and the checker, update this log and Issue #1, then commit and push only intended files.
 
 Keep batches short, visible, and bounded. Leave connected-system work separate from the active static site until owner approval.
+
+## 2026-11-25 — modern agentic writing standard
+
+### Scope
+
+Reworked the supplied Caramel writing audit into `CARAMEL_WRITING_AUDIT_AGENTIC.md` and consolidated the operating rules in `AGENT_LANGUAGE_PROTOCOL.md`.
+
+### Decisions
+
+Caramel writing uses a solo-studio voice: `I` for Melissa’s work, `Caramel Digital Studio` for the studio, and `we` only for a named collaboration or approved quotation. The audit adds five review passes covering purpose, meaning, voice, language, and delivery.
+
+The standard adds source-grounded claims, freshness checks, translation controls, focused African-language localisation, and separate handling for Caramel, Gaia, and future JEV or CLEF decision layers. Decision models remain future architecture work and stay outside the current static site.
+
+### Changed files
+
+- `CARAMEL_WRITING_AUDIT_AGENTIC.md`
+- `AGENT_LANGUAGE_PROTOCOL.md`
+- `.agent-skills/caramel-digital-studio/SKILL.md`
+- `.agent-skills/agentic-studio-build/SKILL.md`
+- `AGENT_HANDOFF_LOG.md`
+
+### Checks
+
+Run both skill validators, `git diff --check`, a long-em-dash scan, and the offline repository checker before delivery. Add the final commit and Issue #1 reference here.

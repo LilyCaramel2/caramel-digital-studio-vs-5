@@ -7,7 +7,7 @@ description: Build and maintain Caramel Digital Studio websites, pricing pages, 
 
 Use this skill for Caramel Digital Studio repository work and client-facing digital-system planning.
 
-Apply `AGENT_LANGUAGE_PROTOCOL.md` to every Caramel output: website copy, content, client replies, proposals, invoices, invoice packs, forms, chatbot responses, agent records, and future Next.js interfaces. The canonical protocol carries the shared language, negative-comparison, word-filter, and handover rules.
+Apply `AGENT_LANGUAGE_PROTOCOL.md` and `CARAMEL_WRITING_AUDIT_AGENTIC.md` to every Caramel output: website copy, content, client replies, proposals, invoices, invoice packs, forms, chatbot responses, agent records, translations, and future Next.js interfaces. Use the solo-studio voice: I for Melissa’s work, Caramel Digital Studio for the studio, and we only for a named collaboration or approved quotation.
 
 ## Current repository mode
 

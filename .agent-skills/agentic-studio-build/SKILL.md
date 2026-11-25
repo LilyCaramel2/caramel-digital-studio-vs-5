@@ -7,7 +7,7 @@ description: Plan and deliver staged client websites and digital systems across 
 
 Use this skill for reusable client-build workflows where several agents or project phases share one repository and delivery record.
 
-When a project contains `AGENT_LANGUAGE_PROTOCOL.md`, load it as the shared baseline for agent communication, public copy, client replies, invoices, forms, chatbots, and handovers. Apply client-specific voice rules after the shared baseline. Keep the baseline portable across industries and project scales.
+When a project contains `AGENT_LANGUAGE_PROTOCOL.md`, load it as the shared baseline for agent communication, public copy, client replies, invoices, forms, chatbots, translations, and handovers. When `CARAMEL_WRITING_AUDIT_AGENTIC.md` exists, apply its purpose, meaning, voice, language, and delivery passes. Apply client-specific voice rules after the shared baseline and keep each domain’s identity separate.
 
 ## Discovery gate
 
